@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clear
+make
+./program.exe < tests/inp.txt > tests/out.txt
+meld tests/out.txt tests/sample_out.txt
