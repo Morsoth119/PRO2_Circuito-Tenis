@@ -24,7 +24,7 @@ void Cjn_Jugadores::actualizar_puntos_torneo(string t) {
 
 bool Cjn_Jugadores::existe_jugador(string s) const { return (jugadores.find(s) != jugadores.end()); }
 
-map<string, Jugador>::iterator Cjn_Jugadores::jugador_ranking(int n) const {
+string Cjn_Jugadores::jugador_ranking(int n) const {
     list< map<string, Jugador>::iterator >::const_iterator it = ranking.begin();
     advance(it, n - 1);
     return (*it)->first;
