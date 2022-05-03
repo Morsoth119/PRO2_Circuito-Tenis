@@ -1,9 +1,5 @@
 #include "Circuito.hh"
 
-bool cmp(Torneo a, Torneo b) { return (a.consultar_nombre() < b.consultar_nombre()); }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
 Circuito::Circuito() {}
 
 void Circuito::anadir_categoria(Categoria c) { vec_categorias.push_back(c); }
@@ -20,6 +16,8 @@ void Circuito::eliminar_torneo(string t) {
     while ((*it).consultar_nombre() != t) ++it;
     list_torneos.erase(it);
 }
+
+//void Circuito::anadir_participante(string p) {}
 
 void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
@@ -62,3 +60,5 @@ void Circuito::escribir_torneos() const {
         ++it;
     }
 }
+
+bool Circuito::cmp(Torneo a, Torneo b) { return (a.consultar_nombre() < b.consultar_nombre()); }

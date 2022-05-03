@@ -53,6 +53,8 @@ public:
     */
     void eliminar_torneo(string t);
 
+    //void anadir_participante(string p);
+
     void iniciar_torneo(string t, const Cjn_Jugadores& j);
 
 //CONSULTORES
@@ -104,6 +106,8 @@ public:
 private:
     vector<Categoria> vec_categorias;
     list<Torneo> list_torneos;
+
+    static bool cmp(Torneo a, Torneo b);
 
 };
 

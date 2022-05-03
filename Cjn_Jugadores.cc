@@ -1,19 +1,18 @@
 #include "Cjn_Jugadores.hh"
 
-bool cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b) { return a->second.consultar_puntos() > b->second.consultar_puntos(); }
+//bool cmp(const pair<string, int>& a, const pair<string, int>& b) { return a.second > b.second; }
 
 Cjn_Jugadores::Cjn_Jugadores() {}
 
-void Cjn_Jugadores::anadir_jugador(string s, Jugador p) {
+void Cjn_Jugadores::anadir_jugador(string s, Jugador p) { 
+    ranking.push_back(make_pair(s, 0));
     jugadores.insert(make_pair(s, p));
-    ranking.push_back(jugadores.find(s));
-    ranking.sort(cmp);
 }
 
 void Cjn_Jugadores::eliminar_jugador(string p) {
-    list< map<string, Jugador>::iterator >::iterator it = ranking.begin();
-    while ((*it)->first != p) ++it;
-    ranking.erase(it);
+    int i = 0;
+    while (ranking[i].first != p) ++i;
+    ranking.erase(ranking.begin() + i);
     jugadores.erase(jugadores.find(p));
 }
 
@@ -24,40 +23,30 @@ void Cjn_Jugadores::actualizar_puntos_torneo(string t) {
 
 bool Cjn_Jugadores::existe_jugador(string s) const { return (jugadores.find(s) != jugadores.end()); }
 
-string Cjn_Jugadores::jugador_ranking(int n) const {
-    list< map<string, Jugador>::iterator >::const_iterator it = ranking.begin();
-    advance(it, n - 1);
-    return (*it)->first;
-}
+string Cjn_Jugadores::jugador_ranking(int n) const { return ranking[n - 1].first; }
 
 int Cjn_Jugadores::num_jugadores() const { return ranking.size(); }
 
 void Cjn_Jugadores::escribir_ranking() const {
-    list< map<string, Jugador>::iterator >::const_iterator it = ranking.begin();
-    int pos = 1;
-    while (it != ranking.end()) {
-        cout << pos << " " << (*it)->first << " " << (*it)->second.consultar_puntos() << endl;
-        ++it; ++pos;
-    }
+    for (int i = 0; i < ranking.size(); ++i) 
+        cout << i + 1 << " " << ranking[i].first << " " << ranking[i].second << endl;
 }
 
 void Cjn_Jugadores::escribir_jugadores() const {
-    map<string, Jugador>::const_iterator it1 = jugadores.begin();
+    map<string, Jugador>::const_iterator it = jugadores.begin();
     cout << jugadores.size() << endl;
-    while (it1 != jugadores.end()) {
-        int pos = 1;
-        list< map<string, Jugador>::iterator >::const_iterator it2 = ranking.begin();
-        while ((*it2)->first != it1->first) { ++it2; ++pos; }
-        (it1)->second.escribir_jug(pos);
-        ++it1;
+    while (it != jugadores.end()) {
+        int i = 0;
+        while (ranking[i].first != (it)->first) ++i;
+        (it)->second.escribir_jug(i + 1);
+        ++it;
     }
 }
 //TODO: arreglar las posicion en el ranking
 //TODO: ver que es Ts, WM, LM, WS, LS, WG, LG
 
 void Cjn_Jugadores::escribir_jugador(string s) const {
-    list< map<string, Jugador>::iterator >::const_iterator it = ranking.begin();
-    int pos = 1;
-    while ((*it)->first != s) { ++it; ++pos; }
-    jugadores.find(s)->second.escribir_jug(pos);
+    int i = 0;
+    while (ranking[i].first != s) ++i;
+    jugadores.find(s)->second.escribir_jug(i + 1);
 }

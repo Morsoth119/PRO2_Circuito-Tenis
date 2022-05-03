@@ -95,10 +95,14 @@ public:
     void escribir_jugador(string s) const;
 
 private:
-    list< map<string, Jugador>::iterator > ranking;
-    //vector< pair<string, int> > ranking;
-
+    vector< pair<string, int> > ranking;
+    //list<Jugador> ranking;
+    //vector< pair<string, int> > ranking; //nombre, puntos
     map<string, Jugador> jugadores; //nombre, Jugador
+
+    //static bool cmp1(string a, string b);
+
+    //static bool cmp2(Jugador a, Jugador b);
         
 };
 
