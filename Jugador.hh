@@ -7,7 +7,7 @@
 
 #ifndef NO_DIAGRAM
 #include <iostream>
-#include <map>
+#include <vector>
 using namespace std;
 #endif
 
@@ -47,8 +47,17 @@ public:
         @pre <em>cierto</em>
         @post devuelve la variable puntos
     */
-    int consultar_puntos() const; //hacer un funcion para consultar stats con parametro
+    int consultar_puntos() const; 
+    
+    //hacer un funcion para consultar stats con parametro
 
+//IMPRIMIR
+
+    /**
+        @brief Escribe las estadisticas del Jugador.
+        @pre <em>cierto</em>
+        @post escribe el nombre, el ranking, los puntos y las demas estadisticas por consola
+    */
     void escribir_jug(int pos) const;
 
 //DESTRUCTORES
@@ -64,8 +73,8 @@ private:
     string nombre;
     int puntos;
     int rank;
-    map<string, int> hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
-    //vector< pair<string,int> > hist_torneos;
+    //map<string, int> hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
+    vector< pair<string,int> > hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
 
 };
 

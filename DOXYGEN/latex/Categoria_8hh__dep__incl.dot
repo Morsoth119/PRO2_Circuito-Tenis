@@ -1,0 +1,20 @@
+digraph "Categoria.hh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Categoria.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Especificación de la clase Categoria."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Categoria.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Categoria_8cc.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Circuito.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Circuito_8hh.html",tooltip="Especificación de la clase Circuito."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Circuito.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Circuito_8cc.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="program.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$program_8cc.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Torneo.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Torneo_8hh.html",tooltip="Especificación de la clase Torneo."];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Torneo.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Torneo_8cc.html",tooltip=" "];
+}

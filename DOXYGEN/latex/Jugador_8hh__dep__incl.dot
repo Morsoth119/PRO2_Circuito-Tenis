@@ -1,0 +1,24 @@
+digraph "Jugador.hh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Jugador.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Especificación de la clase Jugador."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Cjn_Jugadores.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Cjn__Jugadores_8hh.html",tooltip="Especificación de la clase Cjn_Jugadores."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Cjn_Jugadores.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Cjn__Jugadores_8cc.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="program.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$program_8cc.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Torneo.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Torneo_8hh.html",tooltip="Especificación de la clase Torneo."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Circuito.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Circuito_8hh.html",tooltip="Especificación de la clase Circuito."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Circuito.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Circuito_8cc.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Torneo.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Torneo_8cc.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Jugador.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Jugador_8cc.html",tooltip=" "];
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica PRO2: &#39;Circuito de Torneos de Tenis&#39;: Fichero Fuente Circuito.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica PRO2: &#39;Circuito de Torneos de Tenis&#39;
+   &#160;<span id="projectnumber">3.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Circuito.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Circuito_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Circuito_8hh.html">Circuito.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classCircuito.html#ad7d5962b0160536b15609afaf99083c7">    3</a></span>&#160;<a class="code" href="classCircuito.html#ad7d5962b0160536b15609afaf99083c7">Circuito::Circuito</a>() {}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classCircuito.html#a677ccd671880b336e984502c4c7e6194">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#a677ccd671880b336e984502c4c7e6194">Circuito::anadir_categoria</a>(<a class="code" href="classCategoria.html">Categoria</a> c) { <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>.push_back(c); }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classCircuito.html#a4ff8f7ea7da8535429e0a88c850d5058">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#a4ff8f7ea7da8535429e0a88c850d5058">Circuito::anadir_torneo</a>(<a class="code" href="classTorneo.html">Torneo</a> t) { </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.push_back(t);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.sort(<a class="code" href="classCircuito.html#a867b7cf26a46f3855b9b53852af0daf5">cmp</a>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCircuito.html#abf389ec0df2ee09d3396334d488639bf">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#abf389ec0df2ee09d3396334d488639bf">Circuito::anadir_niveles</a>(<span class="keywordtype">int</span> i, <span class="keyword">const</span> vector&lt;int&gt;&amp; v) { <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>[i - 1].anadir_pts_nivel(v); }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classCircuito.html#aa632eb0b3ffc7de1b1c304148be37641">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#aa632eb0b3ffc7de1b1c304148be37641">Circuito::eliminar_torneo</a>(<span class="keywordtype">string</span> t) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    list&lt;Torneo&gt;::iterator it = <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.begin();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">while</span> ((*it).consultar_nombre() != t) ++it;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.erase(it);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classCircuito.html#aa4d49db91600774bd1900e1f98aeb342">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#aa4d49db91600774bd1900e1f98aeb342">Circuito::iniciar_torneo</a>(<span class="keywordtype">string</span> t, <span class="keyword">const</span> <a class="code" href="classCjn__Jugadores.html">Cjn_Jugadores</a>&amp; j) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    list&lt;Torneo&gt;::iterator it = <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.begin();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">while</span> ((*it).consultar_nombre() != t) ++it;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    (*it).anadir_participantes(j);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    (*it).crear_emparejamientos();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCircuito.html#a2658ee349d07d14bbe34bf26f046e1aa">   27</a></span>&#160;<a class="code" href="classTorneo.html">Torneo</a> <a class="code" href="classCircuito.html#a2658ee349d07d14bbe34bf26f046e1aa">Circuito::torneo</a>(<span class="keywordtype">string</span> s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    list&lt;Torneo&gt;::const_iterator it = <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.begin();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">while</span> ((*it).consultar_nombre() != s) ++it;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> (*it);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCircuito.html#a42c1eb8493dc860379ea0e98d514b9e7">   33</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classCircuito.html#a42c1eb8493dc860379ea0e98d514b9e7">Circuito::num_categorias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>.size(); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classCircuito.html#aa9d35773ccb658e63f7458f028fba71e">   35</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classCircuito.html#aa9d35773ccb658e63f7458f028fba71e">Circuito::num_torneos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.size(); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCircuito.html#a2845eea096180d7ae884f5f8c14696f7">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCircuito.html#a2845eea096180d7ae884f5f8c14696f7">Circuito::existe_torneo</a>(<span class="keywordtype">string</span> s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    list&lt;Torneo&gt;::const_iterator it = <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.begin();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.end() and (*it).consultar_nombre() != s) ++it;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> (it != <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.end());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classCircuito.html#aac64efdca243157021e6da168d2b7c65">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#aac64efdca243157021e6da168d2b7c65">Circuito::escribir_categorias</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> n_nvl = <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>[0].num_niveles();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    cout &lt;&lt; <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>.size() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; n_nvl &lt;&lt; endl;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>.size(); ++i) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        cout &lt;&lt; <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>[i].consultar_nombre();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_nvl; ++j) cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>[i].consultar_pts_nivel(j);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classCircuito.html#a89501591e6bea46d3703239980d1e004">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCircuito.html#a89501591e6bea46d3703239980d1e004">Circuito::escribir_torneos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    list&lt;Torneo&gt;::const_iterator it = <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.begin();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cout &lt;&lt; <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.size() &lt;&lt; endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="classCircuito.html#aa996169c010e2b517b3de655ac076983">list_torneos</a>.end()) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        cout &lt;&lt; (*it).consultar_nombre() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">vec_categorias</a>[(*it).consultar_categoria() - 1].consultar_nombre() &lt;&lt; endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ++it;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classCircuito.html#a867b7cf26a46f3855b9b53852af0daf5">   62</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCircuito.html#a867b7cf26a46f3855b9b53852af0daf5">Circuito::cmp</a>(<span class="keyword">const</span> <a class="code" href="classTorneo.html">Torneo</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classTorneo.html">Torneo</a>&amp; b) { <span class="keywordflow">return</span> (a.<a class="code" href="classTorneo.html#a51fa3637b157ee65944e139932387860">consultar_nombre</a>() &lt; b.<a class="code" href="classTorneo.html#a51fa3637b157ee65944e139932387860">consultar_nombre</a>()); }</div>
+<div class="ttc" id="aCircuito_8hh_html"><div class="ttname"><a href="Circuito_8hh.html">Circuito.hh</a></div><div class="ttdoc">Especificación de la clase Circuito.</div></div>
+<div class="ttc" id="aclassCategoria_html"><div class="ttname"><a href="classCategoria.html">Categoria</a></div><div class="ttdef"><b>Definition:</b> <a href="Categoria_8hh_source.html#l00014">Categoria.hh:15</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a01c8065da85696b9d4416c1493c7311f"><div class="ttname"><a href="classCircuito.html#a01c8065da85696b9d4416c1493c7311f">Circuito::vec_categorias</a></div><div class="ttdeci">vector&lt; Categoria &gt; vec_categorias</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8hh_source.html#l00115">Circuito.hh:115</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a2658ee349d07d14bbe34bf26f046e1aa"><div class="ttname"><a href="classCircuito.html#a2658ee349d07d14bbe34bf26f046e1aa">Circuito::torneo</a></div><div class="ttdeci">Torneo torneo(string s) const</div><div class="ttdoc">Devuelve el Torneo seleccionado.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00027">Circuito.cc:27</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a2845eea096180d7ae884f5f8c14696f7"><div class="ttname"><a href="classCircuito.html#a2845eea096180d7ae884f5f8c14696f7">Circuito::existe_torneo</a></div><div class="ttdeci">bool existe_torneo(string s) const</div><div class="ttdoc">Comprueba si existe el Torneo seleccionado.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00037">Circuito.cc:37</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a42c1eb8493dc860379ea0e98d514b9e7"><div class="ttname"><a href="classCircuito.html#a42c1eb8493dc860379ea0e98d514b9e7">Circuito::num_categorias</a></div><div class="ttdeci">int num_categorias() const</div><div class="ttdoc">Devuelve el numero de categorias existente.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00033">Circuito.cc:33</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a4ff8f7ea7da8535429e0a88c850d5058"><div class="ttname"><a href="classCircuito.html#a4ff8f7ea7da8535429e0a88c850d5058">Circuito::anadir_torneo</a></div><div class="ttdeci">void anadir_torneo(Torneo t)</div><div class="ttdoc">Añade un Torneo nuevo al Circuito.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00007">Circuito.cc:7</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a677ccd671880b336e984502c4c7e6194"><div class="ttname"><a href="classCircuito.html#a677ccd671880b336e984502c4c7e6194">Circuito::anadir_categoria</a></div><div class="ttdeci">void anadir_categoria(Categoria c)</div><div class="ttdoc">Añade una Categoria nueva al Circuito.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00005">Circuito.cc:5</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a867b7cf26a46f3855b9b53852af0daf5"><div class="ttname"><a href="classCircuito.html#a867b7cf26a46f3855b9b53852af0daf5">Circuito::cmp</a></div><div class="ttdeci">static bool cmp(const Torneo &amp;a, const Torneo &amp;b)</div><div class="ttdoc">Compara dos torneos por orden alfabetico.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00062">Circuito.cc:62</a></div></div>
+<div class="ttc" id="aclassCircuito_html_a89501591e6bea46d3703239980d1e004"><div class="ttname"><a href="classCircuito.html#a89501591e6bea46d3703239980d1e004">Circuito::escribir_torneos</a></div><div class="ttdeci">void escribir_torneos() const</div><div class="ttdoc">Escribe la lista de torneos por consola.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00053">Circuito.cc:53</a></div></div>
+<div class="ttc" id="aclassCircuito_html_aa4d49db91600774bd1900e1f98aeb342"><div class="ttname"><a href="classCircuito.html#aa4d49db91600774bd1900e1f98aeb342">Circuito::iniciar_torneo</a></div><div class="ttdeci">void iniciar_torneo(string t, const Cjn_Jugadores &amp;j)</div><div class="ttdoc">Inicia un Torneo.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00020">Circuito.cc:20</a></div></div>
+<div class="ttc" id="aclassCircuito_html_aa632eb0b3ffc7de1b1c304148be37641"><div class="ttname"><a href="classCircuito.html#aa632eb0b3ffc7de1b1c304148be37641">Circuito::eliminar_torneo</a></div><div class="ttdeci">void eliminar_torneo(string t)</div><div class="ttdoc">Elimina un Torneo del Circuito.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00014">Circuito.cc:14</a></div></div>
+<div class="ttc" id="aclassCircuito_html_aa996169c010e2b517b3de655ac076983"><div class="ttname"><a href="classCircuito.html#aa996169c010e2b517b3de655ac076983">Circuito::list_torneos</a></div><div class="ttdeci">list&lt; Torneo &gt; list_torneos</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8hh_source.html#l00116">Circuito.hh:116</a></div></div>
+<div class="ttc" id="aclassCircuito_html_aa9d35773ccb658e63f7458f028fba71e"><div class="ttname"><a href="classCircuito.html#aa9d35773ccb658e63f7458f028fba71e">Circuito::num_torneos</a></div><div class="ttdeci">int num_torneos() const</div><div class="ttdoc">Devuelve el numero de torneos existentes actualmente.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00035">Circuito.cc:35</a></div></div>
+<div class="ttc" id="aclassCircuito_html_aac64efdca243157021e6da168d2b7c65"><div class="ttname"><a href="classCircuito.html#aac64efdca243157021e6da168d2b7c65">Circuito::escribir_categorias</a></div><div class="ttdeci">void escribir_categorias() const</div><div class="ttdoc">Escribe el vector de categorias por consola.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00043">Circuito.cc:43</a></div></div>
+<div class="ttc" id="aclassCircuito_html_abf389ec0df2ee09d3396334d488639bf"><div class="ttname"><a href="classCircuito.html#abf389ec0df2ee09d3396334d488639bf">Circuito::anadir_niveles</a></div><div class="ttdeci">void anadir_niveles(int i, const vector&lt; int &gt; &amp;v)</div><div class="ttdoc">Añade los puntos por niveles a una Categoria.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00012">Circuito.cc:12</a></div></div>
+<div class="ttc" id="aclassCircuito_html_ad7d5962b0160536b15609afaf99083c7"><div class="ttname"><a href="classCircuito.html#ad7d5962b0160536b15609afaf99083c7">Circuito::Circuito</a></div><div class="ttdeci">Circuito()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="Circuito_8cc_source.html#l00003">Circuito.cc:3</a></div></div>
+<div class="ttc" id="aclassCjn__Jugadores_html"><div class="ttname"><a href="classCjn__Jugadores.html">Cjn_Jugadores</a></div><div class="ttdef"><b>Definition:</b> <a href="Cjn__Jugadores_8hh_source.html#l00020">Cjn_Jugadores.hh:21</a></div></div>
+<div class="ttc" id="aclassTorneo_html"><div class="ttname"><a href="classTorneo.html">Torneo</a></div><div class="ttdef"><b>Definition:</b> <a href="Torneo_8hh_source.html#l00019">Torneo.hh:20</a></div></div>
+<div class="ttc" id="aclassTorneo_html_a51fa3637b157ee65944e139932387860"><div class="ttname"><a href="classTorneo.html#a51fa3637b157ee65944e139932387860">Torneo::consultar_nombre</a></div><div class="ttdeci">string consultar_nombre() const</div><div class="ttdoc">Devuelve el nombre del Torneo.</div><div class="ttdef"><b>Definition:</b> <a href="Torneo_8cc_source.html#l00058">Torneo.cc:58</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

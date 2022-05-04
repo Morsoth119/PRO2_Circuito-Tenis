@@ -28,10 +28,10 @@ public:
 
     /**
         @brief Añade los puntos de cada nivel de la Categoria.
-        @pre ???
-        @post ???
+        @pre 'v' no esta vacio
+        @post sustituye el vector de pts_nivel por 'v'
     */
-    void anadir_pts_nivel(vector<int>& v);
+    void anadir_pts_nivel(const vector<int>& v);
 
 //CONSULTORES
 
@@ -44,7 +44,7 @@ public:
 
     /**
         @brief Devuelve los puntos del nivel 'i' de la Categoria.
-        @pre 'i' esta dentro del rango *cambiar*
+        @pre 0 <= 'i' < pts_size
         @post devuelve pts_Nivel[i]
     */
     int consultar_pts_nivel(int i) const;

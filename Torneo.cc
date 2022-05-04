@@ -1,6 +1,8 @@
 #include "Torneo.hh"
 
-BinTree<int> crear_cuadro(const int& h, const bool& conflicto, const int& n_part, int pos, int nivel) {
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BinTree<int> Torneo::crear_cuadro(const int& h, const bool& conflicto, const int& n_part, int pos, int nivel) {
     if (nivel > h + 1) return BinTree<int>();
     else if (conflicto and (nivel == h) and pos <= (pow(2, h - 1) - n_part)) return BinTree<int>(pos);
     else {
@@ -9,7 +11,7 @@ BinTree<int> crear_cuadro(const int& h, const bool& conflicto, const int& n_part
     }
 }
 
-void escribir_cuadro(const BinTree<int>& e, const vector< pair<string, int> >& p) {
+void Torneo::escribir_cuadro(const BinTree<int>& e, const vector< pair<string, int> >& p) {
     if (not e.right().empty()) {
         cout << '(';
         escribir_cuadro(e.left(), p);
@@ -47,9 +49,11 @@ void Torneo::crear_emparejamientos() {
     cout << endl;
 }
 
+/*
 void Torneo::borrar_participantes() {
 
 }
+*/
 
 string Torneo::consultar_nombre() const { return nombre; }
 

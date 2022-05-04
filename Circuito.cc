@@ -9,15 +9,13 @@ void Circuito::anadir_torneo(Torneo t) {
     list_torneos.sort(cmp);
 }
 
-void Circuito::anadir_niveles(int i, vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
+void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
 
 void Circuito::eliminar_torneo(string t) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
     list_torneos.erase(it);
 }
-
-//void Circuito::anadir_participante(string p) {}
 
 void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
@@ -61,4 +59,4 @@ void Circuito::escribir_torneos() const {
     }
 }
 
-bool Circuito::cmp(Torneo a, Torneo b) { return (a.consultar_nombre() < b.consultar_nombre()); }
+bool Circuito::cmp(const Torneo& a, const Torneo& b) { return (a.consultar_nombre() < b.consultar_nombre()); }

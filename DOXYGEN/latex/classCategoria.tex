@@ -1,0 +1,189 @@
+\hypertarget{classCategoria}{}\doxysection{Referencia de la Clase Categoria}
+\label{classCategoria}\index{Categoria@{Categoria}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCategoria_adea6cf3a37cf349fc32a1c12ac76ea31}{Categoria}} (string s)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCategoria_a21dc0fd531dbfe33f358c867dca41860}{anadir\+\_\+pts\+\_\+nivel}} (const vector$<$ int $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Añade los puntos de cada nivel de la \mbox{\hyperlink{classCategoria}{Categoria}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCategoria_a72f2b23022a8cafc22dc73f16b833d8a}{consultar\+\_\+nombre}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el nombre de la \mbox{\hyperlink{classCategoria}{Categoria}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCategoria_a375dd6c266eb0fed58f30cae6af2c1e7}{consultar\+\_\+pts\+\_\+nivel}} (int i) const
+\begin{DoxyCompactList}\small\item\em Devuelve los puntos del nivel \textquotesingle{}i\textquotesingle{} de la \mbox{\hyperlink{classCategoria}{Categoria}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCategoria_a387de06267c5ea845bc8a3a4aa4e3a5e}{num\+\_\+niveles}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de niveles que tiene la categoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classCategoria_ad27883ac44dfb0b42bebf61b9b7e42b4}{nombre}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classCategoria_a0f0539a525231d21b2cd913afd406aca}{pts\+\_\+nivel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 14 del archivo Categoria.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classCategoria_adea6cf3a37cf349fc32a1c12ac76ea31}\label{classCategoria_adea6cf3a37cf349fc32a1c12ac76ea31}} 
+\index{Categoria@{Categoria}!Categoria@{Categoria}}
+\index{Categoria@{Categoria}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{Categoria()}{Categoria()}}
+{\footnotesize\ttfamily Categoria\+::\+Categoria (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+el resultado es una \mbox{\hyperlink{classCategoria}{Categoria}} con el nombre \textquotesingle{}s\textquotesingle{} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 3 del archivo Categoria.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3 \{ \mbox{\hyperlink{classCategoria_ad27883ac44dfb0b42bebf61b9b7e42b4}{nombre}} = s; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classCategoria_a21dc0fd531dbfe33f358c867dca41860}\label{classCategoria_a21dc0fd531dbfe33f358c867dca41860}} 
+\index{Categoria@{Categoria}!anadir\_pts\_nivel@{anadir\_pts\_nivel}}
+\index{anadir\_pts\_nivel@{anadir\_pts\_nivel}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{anadir\_pts\_nivel()}{anadir\_pts\_nivel()}}
+{\footnotesize\ttfamily void Categoria\+::anadir\+\_\+pts\+\_\+nivel (\begin{DoxyParamCaption}\item[{const vector$<$ int $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Añade los puntos de cada nivel de la \mbox{\hyperlink{classCategoria}{Categoria}}. 
+
+\begin{DoxyPrecond}{Precondición}
+\textquotesingle{}v\textquotesingle{} no esta vacio 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+sustituye el vector de pts\+\_\+nivel por \textquotesingle{}v\textquotesingle{} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 5 del archivo Categoria.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{ \mbox{\hyperlink{classCategoria_a0f0539a525231d21b2cd913afd406aca}{pts\_nivel}} = v; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCategoria_a72f2b23022a8cafc22dc73f16b833d8a}\label{classCategoria_a72f2b23022a8cafc22dc73f16b833d8a}} 
+\index{Categoria@{Categoria}!consultar\_nombre@{consultar\_nombre}}
+\index{consultar\_nombre@{consultar\_nombre}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{consultar\_nombre()}{consultar\_nombre()}}
+{\footnotesize\ttfamily string Categoria\+::consultar\+\_\+nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el nombre de la \mbox{\hyperlink{classCategoria}{Categoria}}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve la variable nombre 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Categoria.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classCategoria_ad27883ac44dfb0b42bebf61b9b7e42b4}{nombre}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCategoria_a375dd6c266eb0fed58f30cae6af2c1e7}\label{classCategoria_a375dd6c266eb0fed58f30cae6af2c1e7}} 
+\index{Categoria@{Categoria}!consultar\_pts\_nivel@{consultar\_pts\_nivel}}
+\index{consultar\_pts\_nivel@{consultar\_pts\_nivel}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{consultar\_pts\_nivel()}{consultar\_pts\_nivel()}}
+{\footnotesize\ttfamily int Categoria\+::consultar\+\_\+pts\+\_\+nivel (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve los puntos del nivel \textquotesingle{}i\textquotesingle{} de la \mbox{\hyperlink{classCategoria}{Categoria}}. 
+
+\begin{DoxyPrecond}{Precondición}
+0 $<$= \textquotesingle{}i\textquotesingle{} $<$ pts\+\_\+size 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve pts\+\_\+\+Nivel\mbox{[}i\mbox{]} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 9 del archivo Categoria.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classCategoria_a0f0539a525231d21b2cd913afd406aca}{pts\_nivel}}[i]; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCategoria_a387de06267c5ea845bc8a3a4aa4e3a5e}\label{classCategoria_a387de06267c5ea845bc8a3a4aa4e3a5e}} 
+\index{Categoria@{Categoria}!num\_niveles@{num\_niveles}}
+\index{num\_niveles@{num\_niveles}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{num\_niveles()}{num\_niveles()}}
+{\footnotesize\ttfamily int Categoria\+::num\+\_\+niveles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el numero de niveles que tiene la categoria. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve el tamaño de pts\+\_\+nivel 
+\end{DoxyPostcond}
+
+
+Definición en la línea 11 del archivo Categoria.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classCategoria_a0f0539a525231d21b2cd913afd406aca}{pts\_nivel}}.size(); \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classCategoria_ad27883ac44dfb0b42bebf61b9b7e42b4}\label{classCategoria_ad27883ac44dfb0b42bebf61b9b7e42b4}} 
+\index{Categoria@{Categoria}!nombre@{nombre}}
+\index{nombre@{nombre}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily string Categoria\+::nombre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 60 del archivo Categoria.\+hh.
+
+\mbox{\Hypertarget{classCategoria_a0f0539a525231d21b2cd913afd406aca}\label{classCategoria_a0f0539a525231d21b2cd913afd406aca}} 
+\index{Categoria@{Categoria}!pts\_nivel@{pts\_nivel}}
+\index{pts\_nivel@{pts\_nivel}!Categoria@{Categoria}}
+\doxysubsubsection{\texorpdfstring{pts\_nivel}{pts\_nivel}}
+{\footnotesize\ttfamily vector$<$int$>$ Categoria\+::pts\+\_\+nivel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 61 del archivo Categoria.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Categoria_8hh}{Categoria.\+hh}}\item 
+\mbox{\hyperlink{Categoria_8cc}{Categoria.\+cc}}\end{DoxyCompactItemize}

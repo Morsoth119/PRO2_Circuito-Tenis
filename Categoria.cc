@@ -2,7 +2,7 @@
 
 Categoria::Categoria(string s) { nombre = s; }
 
-void Categoria::anadir_pts_nivel(vector<int>& v) { pts_nivel = v; }
+void Categoria::anadir_pts_nivel(const vector<int>& v) { pts_nivel = v; }
 
 string Categoria::consultar_nombre() const { return nombre; }
 

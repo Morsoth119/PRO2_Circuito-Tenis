@@ -44,17 +44,25 @@ public:
     */
     void anadir_torneo(Torneo t);
 
-    void anadir_niveles(int i, vector<int>& v);
+    /**
+        @brief Añade los puntos por niveles a una Categoria.
+        @pre 0 <= 'i' < vec_categorias.size(); 'v' no vacio
+        @post los pts por nivel de la Categoria 'i' pasan a ser 'v'
+    */
+    void anadir_niveles(int i, const vector<int>& v);
 
     /**
         @brief Elimina un Torneo del Circuito.
         @pre existe el Torneo con nombre 't'
-        @post elimina el Torneo con nombre 't' del vector de torneos
+        @post elimina el Torneo con nombre 't' de la lista de torneos
     */
     void eliminar_torneo(string t);
 
-    //void anadir_participante(string p);
-
+    /**
+        @brief Inicia un Torneo.
+        @pre existe el Torneo con nombre 't'
+        @post añade los participantes al torneo y crea los emparejamientos
+    */
     void iniciar_torneo(string t, const Cjn_Jugadores& j);
 
 //CONSULTORES
@@ -83,7 +91,7 @@ public:
     /**
         @brief Comprueba si existe el Torneo seleccionado.
         @pre <em>cierto</em>
-        @post devuelve 'true' si existe un Torneo con el nombre 's', de lo contrario devuelve 'false'
+        @post devuelve true si existe un Torneo con el nombre 's', de lo contrario devuelve false
     */
     bool existe_torneo(string s) const;
 
@@ -92,14 +100,14 @@ public:
     /**
         @brief Escribe el vector de categorias por consola.
         @pre <em>cierto</em>
-        @post escribe el vector de categorias por order de nombre en consola
+        @post escribe el vector de categorias por order alfabetico en consola
     */
     void escribir_categorias() const;
 
     /**
         @brief Escribe la lista de torneos por consola.
         @pre <em>cierto</em>
-        @post escribe la lista de torneos por order de nombre en consola
+        @post escribe la lista de torneos por order alfabetico en consola
     */
     void escribir_torneos() const;
 
@@ -107,7 +115,12 @@ private:
     vector<Categoria> vec_categorias;
     list<Torneo> list_torneos;
 
-    static bool cmp(Torneo a, Torneo b);
+    /**
+        @brief Compara dos torneos por orden alfabetico.
+        @pre <em>cierto</em>
+        @post devuelve true si el nombre de 'a' va antes que el de 'b', de lo contrario devuelve false
+    */
+    static bool cmp(const Torneo& a, const Torneo& b);
 
 };
 
