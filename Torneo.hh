@@ -107,7 +107,7 @@ private:
     */
     void escribir_cuadro(const BinTree<int>& e, const vector< pair<string, int> >& p);
 
-    BinTree<int> cuadro_final(const BinTree<int>& c);
+    BinTree<int> cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
 
 };
 

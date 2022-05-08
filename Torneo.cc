@@ -22,20 +22,26 @@ void Torneo::escribir_cuadro(const BinTree<int>& e, const vector< pair<string, i
     else cout << e.value() << '.' << p[e.value() - 1].first;
 }
 
-BinTree<int> Torneo::cuadro_final(const BinTree<int>& c) {
+BinTree<int> Torneo::cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl) {
     int WGa = 0, LGa = 0;
     if (not procesar_partido(WGa, LGa)) return BinTree<int>();
 
     BinTree<int> cleft = c.left();
     BinTree<int> cright = c.right();
 
-    BinTree<int> left = cuadro_final(cleft);
-    BinTree<int> right = cuadro_final(cright);
+    BinTree<int> left = cuadro_final(cleft, pts_nvl, nvl + 1);
+    BinTree<int> right = cuadro_final(cright, pts_nvl, nvl + 1);
 
     int winner;
-    if (WGa > LGa) winner = cleft.value();
-    else winner = cright.value();
-
+    if (WGa > LGa) {
+        winner = cleft.value();
+        participantes[cright.value() - 1].second = pts_nvl[nvl - 1];
+    }
+    else {
+        winner = cright.value();
+        participantes[cleft.value() - 1].second = pts_nvl[nvl - 1];
+    }
+    cout << nvl << endl;
     return BinTree<int>(winner, left, right);
 }
 
@@ -67,8 +73,11 @@ void Torneo::crear_emparejamientos() {
 }
 
 void Torneo::procesar_torneo(const vector<int>& pts_nvl) {
-    resultados = cuadro_final(emparejamientos);
+    for (int i = 0; i < pts_nvl.size(); i++) cout << pts_nvl[i] << endl;
     
+    resultados = cuadro_final(emparejamientos, pts_nvl, 1);
+    for (int i = 0; i < participantes.size(); ++i)
+        cout << i + 1 << "." << participantes[i].first << " " << participantes[i].second << endl;    
 }
 
 bool Torneo::procesar_partido(int& WGa, int& LGa) {
