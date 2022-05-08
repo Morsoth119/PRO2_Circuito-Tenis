@@ -50,6 +50,13 @@ public:
     int consultar_pts_nivel(int i) const;
 
     /**
+        @brief Devuelve los puntos obtenidos por cada nivel de la Categoria.
+        @pre <em>cierto</em>
+        @post devuelve pts_Nivel
+    */
+    vector<int> consultar_niveles() const;
+
+    /**
         @brief Devuelve el numero de niveles que tiene la categoria.
         @pre <em>cierto</em>
         @post devuelve el tamaño de pts_nivel

@@ -17,12 +17,98 @@ error: el jugador no existe
 #it Cincinnati
 (((((1.Djokovic 32.Paire) (16.Isner 17.Evans)) ((8.Hurkacz 25.Korda) (9.Norrie 24.Fognini))) (((4.Rublev 29.Lajovic) (13.Basilashvili 20.De-Minaur)) ((5.Ruud 28.Ivashka) (12.Opelka 21.Tiafoe)))) ((((2.Medvedev 31.Goffin) (15.Karatsev 18.Federer)) ((7.Sinner 26.Nishikori) (10.Shapovalov 23.Fucsovics))) (((3.Zverev 30.Brooksby) (14.Sonego 19.Bublik)) ((6.Auger-Aliassime 27.Krajinovic) (11.Fritz 22.Harris)))))
 #finalizar_torneo Barcelona
-(((1.Tsitsipas (8.Cilic 9.Monfils)) ((4.Schwartzman 13.Dimitrov) (5.Bautista 12.Ramos))) ((2.Nadal (7.Alcaraz 10.Khachanov)) ((3.Berrettini 14.Delbonis) (6.Carreno 11.Garin))))
-#7-6,3-6,6-4#6-2,6-4#6-4,6-4#0#6-4,4-6,4-6#0#0#1-6,6-2,3-6#6-1,6-3#0#0#7-5,7-6#0#0#7-6,4-6,6-7#5-7,5-7#0#6-3,6-7,7-5#0#0#5-7,6-3,6-0#6-4,7-6#0#0#1-0#0#0#cj Nadal
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+9
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+4
+Juegos de A: 2 ; Juegos de B: 0
+5
+5
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 1
+7
+7
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+3
+Juegos de A: 1 ; Juegos de B: 0
+6
+3
+3
+1
+#cj Nadal
 Nadal Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #ft Cincinnati
-(((((1.Djokovic 32.Paire) (16.Isner 17.Evans)) ((8.Hurkacz 25.Korda) (9.Norrie 24.Fognini))) (((4.Rublev 29.Lajovic) (13.Basilashvili 20.De-Minaur)) ((5.Ruud 28.Ivashka) (12.Opelka 21.Tiafoe)))) ((((2.Medvedev 31.Goffin) (15.Karatsev 18.Federer)) ((7.Sinner 26.Nishikori) (10.Shapovalov 23.Fucsovics))) (((3.Zverev 30.Brooksby) (14.Sonego 19.Bublik)) ((6.Auger-Aliassime 27.Krajinovic) (11.Fritz 22.Harris)))))
-#4-6,6-3,4-6#6-3,7-6#6-2,6-4#6-3,6-1#6-0,6-1#0#0#5-7,3-6#0#0#6-3,6-7,6-7#6-4,6-4#0#0#6-7,6-2,6-2#0#0#3-6,6-4,7-5#7-5,7-5#6-1,6-2#0#0#5-7,3-6#0#0#7-5,3-6,6-3#4-6,5-7#0#0#5-7,3-6#0#0#7-6,7-6#6-3,3-6,6-3#1-0#6-2,6-4#0#0#0-1#0#0#6-7,6-4,5-7#6-1,6-1#0#0#5-7,3-6#0#0#5-7,6-3,6-0#6-4,7-6#6-0,6-1#0#0#6-4,5-7,3-6#0#0#6-3,6-4#0-1#0#0#6-4,6-1#0#0#cj Djokovic
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+1
+Juegos de A: 0 ; Juegos de B: 2
+17
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+8
+Juegos de A: 2 ; Juegos de B: 1
+9
+9
+1
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+4
+Juegos de A: 0 ; Juegos de B: 2
+20
+4
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 0 ; Juegos de B: 2
+28
+Juegos de A: 0 ; Juegos de B: 2
+21
+5
+4
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+2
+Juegos de A: 0 ; Juegos de B: 1
+18
+2
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+7
+Juegos de A: 0 ; Juegos de B: 2
+23
+10
+2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+3
+Juegos de A: 1 ; Juegos de B: 2
+19
+3
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 0 ; Juegos de B: 1
+27
+Juegos de A: 2 ; Juegos de B: 0
+11
+6
+3
+2
+2
+#cj Djokovic
 Djokovic Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #nj Popyrin
 52
@@ -195,10 +281,86 @@ Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #it Indian_Wells
 ((((1.Djokovic (16.Carreno 17.Opelka)) ((8.Ruud 25.Fucsovics) (9.Auger-Aliassime 24.Tiafoe))) ((4.Tsitsipas (13.Schwartzman 20.Monfils)) ((5.Nadal 28.Cuevas) (12.Norrie 21.Federer)))) (((2.Medvedev (15.Fritz 18.Basilashvili)) ((7.Rublev 26.Nishikori) (10.Sinner 23.Dimitrov))) ((3.Zverev (14.Shapovalov 19.Karatsev)) ((6.Berrettini 27.Murray) (11.Hurkacz 22.Ramos)))))
 #finalizar_torneo Casablanca
-(((1.Bautista (8.Paire 9.Coria)) ((4.Korda 13.Verdasco) (5.Ivashka 12.Lopez))) ((2.Evans (7.Goffin 10.Andujar)) (3.Bublik (6.Lajovic 11.Gasquet))))
-#6-3,7-6#4-6,6-3,6-2#6-1,6-4#0#6-4,4-6,6-4#0#0#6-1,5-7,6-3#4-6,4-6#0#0#7-5,6-7,0-6#0#0#6-3,6-2#7-5,5-7,7-6#0#6-3,4-6,4-6#0#0#6-1,6-1#0#4-6,3-6#0#0#ft Indian_Wells
-((((1.Djokovic (16.Carreno 17.Opelka)) ((8.Ruud 25.Fucsovics) (9.Auger-Aliassime 24.Tiafoe))) ((4.Tsitsipas (13.Schwartzman 20.Monfils)) ((5.Nadal 28.Cuevas) (12.Norrie 21.Federer)))) (((2.Medvedev (15.Fritz 18.Basilashvili)) ((7.Rublev 26.Nishikori) (10.Sinner 23.Dimitrov))) ((3.Zverev (14.Shapovalov 19.Karatsev)) ((6.Berrettini 27.Murray) (11.Hurkacz 22.Ramos)))))
-#3-6,6-4,7-6#7-5,3-6,3-6#6-4,6-4#6-1,6-0#0#5-7,6-4,6-1#0#0#6-3,6-3#1-6,6-4,2-6#0#0#6-7,4-6#0#0#6-2,6-3#3-6,6-2,5-7#0#6-1,6-1#0#0#7-5,6-3#4-6,6-7#0#0#1-0#0#0#6-2,7-5#6-3,6-3#6-4,6-1#0#6-3,4-6,6-4#0#0#7-6,7-6#6-0,6-2#0#0#3-6,2-6#0#0#4-6,7-5,6-3#6-4,6-4#0#6-2,7-6#0#0#0-1#6-1,6-4#0#0#5-7,3-6#0#0#lr
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+8
+1
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 0 ; Juegos de B: 2
+13
+Juegos de A: 1 ; Juegos de B: 2
+12
+4
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 2
+10
+2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 0 ; Juegos de B: 2
+11
+3
+2
+1
+#ft Indian_Wells
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+16
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+25
+Juegos de A: 0 ; Juegos de B: 2
+24
+8
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+13
+13
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 0 ; Juegos de B: 2
+28
+Juegos de A: 1 ; Juegos de B: 0
+12
+5
+4
+4
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+15
+2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+7
+Juegos de A: 0 ; Juegos de B: 2
+23
+7
+2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+14
+3
+Juegos de A: 0 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+6
+Juegos de A: 0 ; Juegos de B: 2
+22
+11
+3
+2
+1
+#lr
 1 Djokovic 0
 2 Medvedev 0
 3 Zverev 0
@@ -274,8 +436,135 @@ Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #it Wimbledon
 ((((((1.Djokovic (64.Raonic 65.Wawrinka)) (32.Dimitrov 33.Tiafoe)) ((16.Fritz 49.Kwon) (17.Carreno 48.Djere))) (((8.Ruud 57.Lopez) (25.Monfils 40.Davidovich)) ((9.Auger-Aliassime 56.Cuevas) (24.Cilic 41.Krajinovic)))) ((((4.Tsitsipas 61.Kyrgios) (29.Federer 36.Fognini)) ((13.Schwartzman 52.Gaston) (20.Alcaraz 45.Paire))) (((5.Nadal 60.Kohlschreiber) (28.Evans 37.Korda)) ((12.Norrie 53.Gasquet) (21.Sonego 44.Brooksby))))) (((((2.Medvedev 63.Pospisil) (31.De-Minaur 34.Harris)) ((15.Bautista 50.Coria) (18.Opelka 47.Popyrin))) (((7.Rublev 58.Querrey) (26.Khachanov 39.Nishikori)) ((10.Sinner 55.Nishioka) (23.Isner 42.Ivashka)))) ((((3.Zverev 62.Chardy) (30.Bublik 35.Fucsovics)) ((14.Shapovalov 51.Andujar) (19.Basilashvili 46.Duckworth))) (((6.Berrettini 59.Vesely) (27.Garin 38.Humbert)) ((11.Hurkacz 54.Murray) (22.Karatsev 43.Lajovic))))))
 #ft Wimbledon
-((((((1.Djokovic (64.Raonic 65.Wawrinka)) (32.Dimitrov 33.Tiafoe)) ((16.Fritz 49.Kwon) (17.Carreno 48.Djere))) (((8.Ruud 57.Lopez) (25.Monfils 40.Davidovich)) ((9.Auger-Aliassime 56.Cuevas) (24.Cilic 41.Krajinovic)))) ((((4.Tsitsipas 61.Kyrgios) (29.Federer 36.Fognini)) ((13.Schwartzman 52.Gaston) (20.Alcaraz 45.Paire))) (((5.Nadal 60.Kohlschreiber) (28.Evans 37.Korda)) ((12.Norrie 53.Gasquet) (21.Sonego 44.Brooksby))))) (((((2.Medvedev 63.Pospisil) (31.De-Minaur 34.Harris)) ((15.Bautista 50.Coria) (18.Opelka 47.Popyrin))) (((7.Rublev 58.Querrey) (26.Khachanov 39.Nishikori)) ((10.Sinner 55.Nishioka) (23.Isner 42.Ivashka)))) ((((3.Zverev 62.Chardy) (30.Bublik 35.Fucsovics)) ((14.Shapovalov 51.Andujar) (19.Basilashvili 46.Duckworth))) (((6.Berrettini 59.Vesely) (27.Garin 38.Humbert)) ((11.Hurkacz 54.Murray) (22.Karatsev 43.Lajovic))))))
-#4-6,6-3,4-6#6-3,7-6#6-2,6-4#6-3,6-1#6-0,6-1#1-0#0#3-6,4-6#0#0#0-1#0#0#5-7,3-6#1-0#0#0#0-1#0#0#6-3,6-7,6-7#6-4,6-4#1-0#0#0#0-1#0#0#6-7,6-2,6-2#1-0#0#0#0-1#0#0#3-6,6-4,7-5#7-5,7-5#6-1,6-2#1-0#0#0#0-1#0#0#5-7,3-6#1-0#0#0#0-1#0#0#7-5,3-6,6-3#4-6,5-7#1-0#0#0#0-1#0#0#5-7,3-6#1-0#0#0#0-1#0#0#7-6,7-6#6-3,3-6,6-3#1-0#6-2,6-4#1-0#0#0#0-1#0#0#0-1#1-0#0#0#0-1#0#0#6-7,6-4,5-7#6-1,6-1#1-0#0#0#0-1#0#0#5-7,3-6#1-0#0#0#0-1#0#0#5-7,6-3,6-0#6-4,7-6#6-0,6-1#1-0#0#0#0-1#0#0#6-4,5-7,3-6#1-0#0#0#0-1#0#0#6-3,6-4#0-1#1-0#0#0#0-1#0#0#6-4,6-1#1-0#0#0#0-1#0#0#listar_ranking
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+Juegos de A: 0 ; Juegos de B: 2
+65
+1
+Juegos de A: 0 ; Juegos de B: 1
+33
+1
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+16
+Juegos de A: 0 ; Juegos de B: 1
+48
+17
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+8
+Juegos de A: 0 ; Juegos de B: 1
+40
+8
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 0
+9
+Juegos de A: 0 ; Juegos de B: 1
+41
+9
+9
+1
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+4
+Juegos de A: 0 ; Juegos de B: 1
+36
+4
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+13
+Juegos de A: 0 ; Juegos de B: 1
+45
+20
+4
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+5
+Juegos de A: 0 ; Juegos de B: 1
+37
+28
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+12
+Juegos de A: 0 ; Juegos de B: 1
+44
+21
+5
+4
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+2
+Juegos de A: 0 ; Juegos de B: 1
+34
+2
+Juegos de A: 0 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 0
+15
+Juegos de A: 0 ; Juegos de B: 1
+47
+18
+2
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+7
+Juegos de A: 0 ; Juegos de B: 1
+39
+7
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+10
+Juegos de A: 0 ; Juegos de B: 1
+42
+23
+10
+2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+3
+Juegos de A: 0 ; Juegos de B: 1
+35
+3
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+14
+Juegos de A: 0 ; Juegos de B: 1
+46
+19
+3
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 0 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 0
+6
+Juegos de A: 0 ; Juegos de B: 1
+38
+27
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+11
+Juegos de A: 0 ; Juegos de B: 1
+43
+11
+6
+3
+2
+2
+#listar_ranking
 1 Djokovic 0
 2 Medvedev 0
 3 Zverev 0
@@ -425,8 +714,47 @@ Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #bt Cincinnati
 4
 #ft Barcelona
-(((((1.Tsitsipas (32.Fognini 33.Davidovich)) (16.Nadal 17.Berrettini)) ((8.Cilic 25.Karatsev) (9.Monfils 24.Sonego))) (((4.Schwartzman 29.Bublik) (13.Dimitrov 20.Sinner)) ((5.Bautista 28.Federer) (12.Ramos 21.Schwartzman)))) ((((2.Nadal (31.Delbonis 34.Coria)) (15.Tsitsipas 18.Rublev)) ((7.Alcaraz 26.Isner) (10.Khachanov 23.Alcaraz))) (((3.Berrettini (30.Ramos 35.Kohlschreiber)) (14.Delbonis 19.Ruud)) ((6.Carreno 27.Evans) (11.Garin 22.Carreno)))))
-#7-5,6-7,7-6#2-6,3-6#7-6,3-6,6-4#6-7,6-2,6-7#0#7-5,6-4#0#0#6-3,6-0#0#0#6-1,6-4#6-1,6-1#0#1-0#0#0#4-6,6-3,6-7#0#6-7,3-6#0#0#6-4,1-6,2-6#1-0#6-7,6-4,3-6#0#4-6,6-7#0#0#6-3,6-3#0#0#0-6,2-6#0-1#0#7-5,7-5#0#0#6-4,7-5#0#0#nuevo_jugador Fritz
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+16
+16
+Juegos de A: 2 ; Juegos de B: 0
+8
+1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 0
+13
+4
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 0 ; Juegos de B: 2
+21
+12
+4
+4
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 1 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 0 ; Juegos de B: 2
+18
+15
+Juegos de A: 2 ; Juegos de B: 0
+7
+2
+Juegos de A: 0 ; Juegos de B: 2
+Juegos de A: 0 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+14
+14
+Juegos de A: 2 ; Juegos de B: 0
+6
+6
+3
+1
+#nuevo_jugador Fritz
 68
 #lr
 1 Djokovic 0
@@ -500,8 +828,61 @@ Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 #it Indian_Wells
 (((((1.Djokovic (32.Hurkacz 33.Norrie)) ((16.Carreno 49.Krajinovic) (17.Opelka 48.Davidovich))) ((8.Ruud (25.Fucsovics 40.Dimitrov)) ((9.Auger-Aliassime 56.Fritz) (24.Tiafoe 41.Tiafoe)))) (((4.Tsitsipas (29.Djokovic 36.Monfils)) ((13.Schwartzman 52.Andujar) (20.Monfils 45.Korda))) ((5.Nadal (28.Cuevas 37.Garin)) ((12.Norrie 53.Querrey) (21.Federer 44.Paul))))) ((((2.Medvedev (31.Zverev 34.Opelka)) ((15.Fritz 50.Popyrin) (18.Basilashvili 47.Nishikori))) ((7.Rublev (26.Nishikori 39.De-Minaur)) ((10.Sinner 55.Raonic) (23.Dimitrov 42.Harris)))) (((3.Zverev (30.Medvedev 35.Karatsev)) ((14.Shapovalov 51.Djere) (19.Karatsev 46.Humbert))) ((6.Berrettini (27.Murray 38.Ramos)) ((11.Hurkacz 54.Kohlschreiber) (22.Ramos 43.Fucsovics))))))
 #ft Indian_Wells
-(((((1.Djokovic (32.Hurkacz 33.Norrie)) ((16.Carreno 49.Krajinovic) (17.Opelka 48.Davidovich))) ((8.Ruud (25.Fucsovics 40.Dimitrov)) ((9.Auger-Aliassime 56.Fritz) (24.Tiafoe 41.Tiafoe)))) (((4.Tsitsipas (29.Djokovic 36.Monfils)) ((13.Schwartzman 52.Andujar) (20.Monfils 45.Korda))) ((5.Nadal (28.Cuevas 37.Garin)) ((12.Norrie 53.Querrey) (21.Federer 44.Paul))))) ((((2.Medvedev (31.Zverev 34.Opelka)) ((15.Fritz 50.Popyrin) (18.Basilashvili 47.Nishikori))) ((7.Rublev (26.Nishikori 39.De-Minaur)) ((10.Sinner 55.Raonic) (23.Dimitrov 42.Harris)))) (((3.Zverev (30.Medvedev 35.Karatsev)) ((14.Shapovalov 51.Djere) (19.Karatsev 46.Humbert))) ((6.Berrettini (27.Murray 38.Ramos)) ((11.Hurkacz 54.Kohlschreiber) (22.Ramos 43.Fucsovics))))))
-#7-6,3-6,6-4#6-2,6-4#6-4,6-4#6-3,6-0#0#6-4,4-6,7-6#0#0#6-4,4-6,4-6#6-2,6-3#0#0#1-0#0#0#1-6,6-2,3-6#6-1,6-3#0#7-5,6-0#0#0#7-5,7-6#6-1,6-1#0#0#6-3,6-3#0#0#7-6,4-6,6-7#7-5,7-5#6-1,6-2#0#6-2,5-7,4-6#0#0#6-3,6-7,7-5#6-1,6-4#0#0#7-6,6-3#0#0#5-7,6-3,6-0#6-4,7-6#0#3-6,7-5,5-7#0#0#1-0#7-6,6-4#0#0#0-1#0#0#lt
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 1
+16
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+8
+Juegos de A: 1 ; Juegos de B: 0
+9
+9
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+13
+4
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+5
+Juegos de A: 2 ; Juegos de B: 0
+12
+5
+5
+1
+Juegos de A: 1 ; Juegos de B: 2
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+18
+2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+7
+Juegos de A: 2 ; Juegos de B: 0
+10
+7
+2
+Juegos de A: 2 ; Juegos de B: 1
+Juegos de A: 2 ; Juegos de B: 0
+Juegos de A: 1 ; Juegos de B: 2
+19
+3
+Juegos de A: 1 ; Juegos de B: 0
+Juegos de A: 2 ; Juegos de B: 0
+6
+Juegos de A: 0 ; Juegos de B: 1
+22
+6
+3
+3
+1
+#lt
 4
 Barcelona ATP_500
 Casablanca ATP_250

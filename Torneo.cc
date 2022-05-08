@@ -22,6 +22,23 @@ void Torneo::escribir_cuadro(const BinTree<int>& e, const vector< pair<string, i
     else cout << e.value() << '.' << p[e.value() - 1].first;
 }
 
+BinTree<int> Torneo::cuadro_final(const BinTree<int>& c) {
+    int WGa = 0, LGa = 0;
+    if (not procesar_partido(WGa, LGa)) return BinTree<int>();
+
+    BinTree<int> cleft = c.left();
+    BinTree<int> cright = c.right();
+
+    BinTree<int> left = cuadro_final(cleft);
+    BinTree<int> right = cuadro_final(cright);
+
+    int winner;
+    if (WGa > LGa) winner = cleft.value();
+    else winner = cright.value();
+
+    return BinTree<int>(winner, left, right);
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Torneo::Torneo(string t, int c) {
@@ -47,6 +64,29 @@ void Torneo::crear_emparejamientos() {
 
     escribir_cuadro(emparejamientos, participantes);
     cout << endl;
+}
+
+void Torneo::procesar_torneo(const vector<int>& pts_nvl) {
+    resultados = cuadro_final(emparejamientos);
+    
+}
+
+bool Torneo::procesar_partido(int& WGa, int& LGa) {
+    string s; cin >> s;
+    if (s == "0") return false;
+
+    if (s == "1-0") ++WGa;
+    else if (s == "0-1") ++LGa;
+    else {
+        int i = 0;
+        while (i < s.size()) {
+            if (int(s[i]) > int(s[i+2])) ++WGa;
+            else ++LGa;
+            i += 4;
+        }
+    }
+    cout << "Juegos de A: " << WGa << " ; Juegos de B: " << LGa << endl;
+    return true;
 }
 
 /*

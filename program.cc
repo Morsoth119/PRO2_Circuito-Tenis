@@ -128,8 +128,7 @@ void iniciar_torneo(Circuito& c, Cjn_Jugadores& j) {
 void finalizar_torneo(Circuito& c) {
     string t; cin >> t;
     cout << " " << t << endl;
-    c.torneo(t).crear_emparejamientos();
-    //...
+    c.finalizar_torneo(t);
 }
 
 void listar_ranking(Cjn_Jugadores& j) {

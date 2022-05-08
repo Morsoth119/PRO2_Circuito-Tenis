@@ -45,6 +45,15 @@ public:
     */
     void crear_emparejamientos();
 
+    /**
+        @brief Lee y procesa los resultados del Torneo.
+        @pre existe un Torneo iniciado
+        @post ???
+    */
+    void procesar_torneo(const vector<int>& pts_nvl);
+
+    bool procesar_partido(int& WSa, int& LSa);
+
     /*
         @brief Borra todos los participantes del Torneo.
         @pre <em>cierto</em>
@@ -82,6 +91,7 @@ private:
     int categoria;
     vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
     BinTree<int> emparejamientos;
+    BinTree<int> resultados;
 
     /**
         @brief Crea el arbol binario con los partidos.
@@ -96,6 +106,8 @@ private:
         @post escribe el arbol 'e' por consola
     */
     void escribir_cuadro(const BinTree<int>& e, const vector< pair<string, int> >& p);
+
+    BinTree<int> cuadro_final(const BinTree<int>& c);
 
 };
 

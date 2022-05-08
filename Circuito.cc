@@ -24,6 +24,12 @@ void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
     (*it).crear_emparejamientos();
 }
 
+void Circuito::finalizar_torneo(string t) {
+    list<Torneo>::iterator it = list_torneos.begin();
+    while ((*it).consultar_nombre() != t) ++it;
+    (*it).procesar_torneo(vec_categorias[(*it).consultar_categoria() - 1].consultar_niveles());
+}
+
 Torneo Circuito::torneo(string s) const {
     list<Torneo>::const_iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != s) ++it;
