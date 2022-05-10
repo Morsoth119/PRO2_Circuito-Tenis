@@ -73,7 +73,7 @@ void setup(Circuito& circuito, Cjn_Jugadores& jugadores) {
     cin >> num_jug;
     for (int i = 0; i < num_jug; ++i) {
         string p; cin >> p;
-        jugadores.anadir_jugador(p, Jugador(p));
+        jugadores.anadir_jugador(p, Jugador(p, i + 1));
     }
 }
 
@@ -82,7 +82,7 @@ void nuevo_jugador(Cjn_Jugadores& j) {
     cout << " " << p << endl;
     if (j.existe_jugador(p)) cout << "error: ya existe un jugador con ese nombre" << endl;
     else {
-        j.anadir_jugador(p, Jugador(p));
+        j.anadir_jugador(p, Jugador(p, j.num_jugadores() + 1));
         cout << j.num_jugadores() << endl;
     }
 }

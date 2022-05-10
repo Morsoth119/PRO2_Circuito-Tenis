@@ -22,7 +22,7 @@ public:
         @pre <em>cierto</em>
         @post el resultado es un Jugador con nombre 'p' i 0 en todas sus estadisticas
     */
-    Jugador(string p);
+    Jugador(string p, int rank);
 
 //MODIFICADORES
 
@@ -58,7 +58,7 @@ public:
         @pre <em>cierto</em>
         @post escribe el nombre, el ranking, los puntos y las demas estadisticas por consola
     */
-    void escribir_jug(int pos) const;
+    void escribir_jug() const;
 
 //DESTRUCTORES
 

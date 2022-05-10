@@ -90,10 +90,12 @@ public:
 private:
     string nombre;
     int categoria;
-    vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
-    //vector< pair<string, int> > antiguos_participantes;
+    vector< pair< map<string, Jugador>::iterator, int> > participantes;
+    //vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
+    vector< pair<string, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
+    list<string> list_resultados;
 
     /**
         @brief Crea el arbol binario con los partidos.

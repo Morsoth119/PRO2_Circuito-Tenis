@@ -19,7 +19,7 @@ void Torneo::escribir_cuadro(const BinTree<int>& e) {
         escribir_cuadro(e.right());
         cout << ')';
     }
-    else cout << e.value() << '.' << participantes[e.value() - 1].first;
+    else cout << e.value() << '.' << participantes[e.value() - 1].first->first;
 }
 
 BinTree<int> Torneo::crear_cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl) {
@@ -55,7 +55,7 @@ void Torneo::escribir_cuadro_final(const BinTree<int>& c) {
         escribir_cuadro(c.right());
         cout << ')';
     }
-    else cout << c.value() << '.' << participantes[c.value() - 1].first;
+    else cout << c.value() << '.' << participantes[c.value() - 1].first->first;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,11 +65,13 @@ Torneo::Torneo(string t, int c) {
     categoria = c;
 }
 
-void Torneo::anadir_participantes(const Cjn_Jugadores& j) { 
+void Torneo::anadir_participantes(const Cjn_Jugadores& j) {
+    participantes.clear();
     int n, n_jug; cin >> n;
     for (int i = 0; i < n; ++i) {
         cin >> n_jug;
         participantes.push_back(make_pair(j.jugador_ranking(n_jug), 0));
+        //participantes.push_back(make_pair(j.jugador_ranking(n_jug), 0));
     }
 }
 
@@ -88,12 +90,14 @@ void Torneo::crear_emparejamientos() {
 void Torneo::procesar_torneo(const vector<int>& pts_nvl) {
     resultados = crear_cuadro_final(emparejamientos, pts_nvl, 1);
     for (int i = 0; i < participantes.size(); ++i)
-        cout << i + 1 << "." << participantes[i].first << " " << participantes[i].second << endl;    
+        cout << i + 1 << "." << participantes[i].first->first << " " << participantes[i].second << endl;    
 }
 
 bool Torneo::procesar_partido(int& WGa, int& LGa) {
     string s; cin >> s;
     if (s == "0") return false;
+
+    list_resultados.emplace_back(s);
 
     if (s == "1-0") ++WGa;
     else if (s == "0-1") ++LGa;

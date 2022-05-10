@@ -67,7 +67,7 @@ public:
         @pre 1 <= 'n' <= ranking.size()
         @post devuelve el jugador en el puesto 'n' del ranking
     */
-    string jugador_ranking(int n) const;
+    map<string, Jugador>::iterator jugador_ranking(int n) const;
 
     /**
         @brief Devuelve el numero de jugadores que hay inscritos.
@@ -100,7 +100,8 @@ public:
     void escribir_jugador(string s) const;
 
 private:
-    vector< pair<string, int> > ranking;
+    vector< map<string, Jugador>::iterator > ranking;
+        //vector< pair<string, int> > ranking;
         //list<Jugador> ranking;
         //vector< pair<string, int> > ranking; //nombre, puntos
     map<string, Jugador> jugadores; //nombre, Jugador
