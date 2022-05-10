@@ -7,6 +7,7 @@
 
 #ifndef NO_DIAGRAM
 #include <iostream>
+#include <vector>
 #include <map>
 #include <cmath>
 using namespace std;
@@ -90,6 +91,7 @@ private:
     string nombre;
     int categoria;
     vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
+    //vector< pair<string, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
 
@@ -105,9 +107,11 @@ private:
         @pre 'e' no vacio; el numero de nodos de 'e' es igual a p.size()
         @post escribe el arbol 'e' por consola
     */
-    void escribir_cuadro(const BinTree<int>& e, const vector< pair<string, int> >& p);
+    void escribir_cuadro(const BinTree<int>& e);
 
-    BinTree<int> cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
+    BinTree<int> crear_cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
+
+    void escribir_cuadro_final(const BinTree<int>& c);
 
 };
 

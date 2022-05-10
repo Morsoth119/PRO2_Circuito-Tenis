@@ -20,7 +20,7 @@ public:
     /**
         @brief Constructora por defecto.
         @pre <em>cierto</em>
-        @post el resultado es un Jugador con nombre 'p' i 0 puntos
+        @post el resultado es un Jugador con nombre 'p' i 0 en todas sus estadisticas
     */
     Jugador(string p);
 
@@ -31,7 +31,7 @@ public:
         @pre puntos - 'pts' >= 0
         @post puntos += 'pts' ('pts' puede ser negativo)
     */
-    void modificar_pts(int pts);
+    void modificar_stats(int pts, int Ts, int WM, int LM, int WS, int LS, int WG, int LG);
 
 //CONSULTORES
 
@@ -72,9 +72,8 @@ public:
 private:
     string nombre;
     int puntos;
-    int rank;
-    //map<string, int> hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
-    vector< pair<string,int> > hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
+    int Rk, Ts, WM, LM, WS, LS, WG, LG;
+    //vector< pair<string,int> > hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
 
 };
 

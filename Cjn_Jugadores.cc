@@ -43,7 +43,6 @@ void Cjn_Jugadores::escribir_jugadores() const {
     }
 }
 //TODO: arreglar las posicion en el ranking
-//TODO: ver que es Ts, WM, LM, WS, LS, WG, LG
 
 void Cjn_Jugadores::escribir_jugador(string s) const {
     int i = 0;
