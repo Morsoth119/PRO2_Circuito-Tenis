@@ -17,6 +17,9 @@ using namespace std;
 
 class Circuito 
 {
+    vector<Categoria> vec_categorias;
+    list<Torneo> list_torneos;
+
 public:
 
 //CONSTRUCTORES
@@ -121,8 +124,6 @@ public:
     void escribir_torneos() const;
 
 private:
-    vector<Categoria> vec_categorias;
-    list<Torneo> list_torneos;
 
     /**
         @brief Compara dos torneos por orden alfabetico.

@@ -1,5 +1,7 @@
 #include "Jugador.hh"
 
+// public:
+
 Jugador::Jugador(string p, int rank) {
     nombre = p;
     Rk = rank;

@@ -13,6 +13,9 @@ using namespace std;
 
 class Categoria 
 {
+    string nombre;
+    vector<int> pts_nivel;
+    
 public:
 
 //CONSTRUCTORES
@@ -64,8 +67,6 @@ public:
     int num_niveles() const;
 
 private:
-    string nombre;
-    vector<int> pts_nivel;
 
 };
 

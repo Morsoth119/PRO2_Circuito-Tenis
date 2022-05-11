@@ -1,5 +1,7 @@
 #include "Circuito.hh"
 
+// public:
+
 Circuito::Circuito() {}
 
 void Circuito::anadir_categoria(Categoria c) { vec_categorias.push_back(c); }
@@ -73,5 +75,7 @@ void Circuito::escribir_torneos() const {
         ++it;
     }
 }
+
+// private:
 
 bool Circuito::cmp(const Torneo& a, const Torneo& b) { return (a.consultar_nombre() < b.consultar_nombre()); }

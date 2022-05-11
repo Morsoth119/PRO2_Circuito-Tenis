@@ -19,6 +19,9 @@ using namespace std;
 
 class Cjn_Jugadores 
 {
+    vector< map<string, Jugador>::iterator > ranking;
+    map<string, Jugador> jugadores; //nombre, Jugador
+
 public:
 
 //CONSTRUCTORES
@@ -102,11 +105,8 @@ public:
     void escribir_jugador(string s) const;
 
 private:
-    vector< map<string, Jugador>::iterator > ranking;
-        //vector< pair<string, int> > ranking;
-        //list<Jugador> ranking;
-        //vector< pair<string, int> > ranking; //nombre, puntos
-    map<string, Jugador> jugadores; //nombre, Jugador
+
+    static bool cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b);
         
 };
 

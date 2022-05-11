@@ -19,6 +19,14 @@ using namespace std;
 
 class Torneo 
 {
+    string nombre;
+    int categoria;
+    vector< pair<string, int> > participantes;
+    vector< pair<string, int> > antiguos_participantes;
+    BinTree<int> emparejamientos;
+    BinTree<int> resultados;
+    list<string> list_resultados;
+
 public:
 
 //CONSTRUCTORES
@@ -53,10 +61,6 @@ public:
     */
     void procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl);
 
-    bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
-
-    void anadir_puntos(Cjn_Jugadores& j);
-
     void restar_puntos(Cjn_Jugadores& j);
 
     void borrar_participantes();
@@ -79,23 +83,11 @@ public:
     */
     int consultar_categoria() const;
 
-//DESTRUCTORES
+//DESTRUCTORA
 
-    /**
-        @brief Destructora por defecto.
-        @pre <em>cierto</em>
-        @post se destruye el parametro implícito
-    */
     ~Torneo();
 
 private:
-    string nombre;
-    int categoria;
-    vector< pair<string, int> > participantes;
-    vector< pair<string, int> > antiguos_participantes;
-    BinTree<int> emparejamientos;
-    BinTree<int> resultados;
-    list<string> list_resultados;
 
     /**
         @brief Crea el arbol binario con los partidos.
@@ -114,6 +106,10 @@ private:
     BinTree<int> crear_cuadro_final(Cjn_Jugadores& j, const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
 
     void escribir_cuadro_final(const BinTree<int>& c, list<string>::iterator& it);
+
+    bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
+
+    void anadir_puntos(Cjn_Jugadores& j);
 
 };
 

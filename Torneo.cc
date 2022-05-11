@@ -1,6 +1,72 @@
 #include "Torneo.hh"
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// public:
+
+Torneo::Torneo(string t, int c) {
+    nombre = t;
+    categoria = c;
+}
+
+void Torneo::anadir_participantes(const Cjn_Jugadores& j) {
+    participantes.clear();
+    int n, n_jug; cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> n_jug;
+        participantes.push_back(make_pair(j.jugador_ranking(n_jug), 0));
+    }
+}
+
+void Torneo::crear_emparejamientos() {
+    int sz = participantes.size();
+    int h = 1 + ceil(log2(sz));
+    int max = pow(2, h - 1);
+    bool conflicto = (max != sz);
+    
+    emparejamientos = BinTree<int>(1, crear_cuadro(h, conflicto, sz, 1, 3), crear_cuadro(h, conflicto, sz, 2, 3));
+
+    escribir_cuadro(emparejamientos);
+    cout << endl;
+}
+
+void Torneo::procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl) {
+    resultados = crear_cuadro_final(j, emparejamientos, pts_nvl, 1);
+    list<string>::iterator it = list_resultados.begin();
+    escribir_cuadro_final(resultados, it);
+    cout << endl;
+    for (int i = 0; i < participantes.size(); ++i)
+        cout << i + 1 << "." << participantes[i].first << " " << participantes[i].second << endl;
+    anadir_puntos(j);
+    restar_puntos(j);
+    borrar_participantes();
+}
+
+void Torneo::restar_puntos(Cjn_Jugadores& j) {
+    for (int i = 0; i < antiguos_participantes.size(); ++i) {
+        if (j.existe_jugador(antiguos_participantes[i].first))
+            j.modificar_jugador(antiguos_participantes[i].first, "ps", -antiguos_participantes[i].second);
+    }
+}
+
+void Torneo::borrar_participantes() {
+    antiguos_participantes.clear();
+    for (int i = 0; i < participantes.size(); ++i)
+        antiguos_participantes.push_back(make_pair(participantes[i].first, participantes[i].second));
+    participantes.clear();
+    list_resultados.clear();
+}
+
+void Torneo::borrar_jugador(string p) {
+    for (int i = 0; i < antiguos_participantes.size(); i++)
+        if (antiguos_participantes[i].first == p) antiguos_participantes.erase(antiguos_participantes.begin() + i);    
+}
+
+string Torneo::consultar_nombre() const { return nombre; }
+
+int Torneo::consultar_categoria() const { return categoria; }
+
+Torneo::~Torneo() {}
+
+// private:
 
 BinTree<int> Torneo::crear_cuadro(const int& h, const bool& conflicto, const int& n_part, int pos, int nivel) {
     if (nivel > h + 1) return BinTree<int>();
@@ -81,46 +147,6 @@ void Torneo::escribir_cuadro_final(const BinTree<int>& c, list<string>::iterator
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Torneo::Torneo(string t, int c) {
-    nombre = t;
-    categoria = c;
-}
-
-void Torneo::anadir_participantes(const Cjn_Jugadores& j) {
-    participantes.clear();
-    int n, n_jug; cin >> n;
-    for (int i = 0; i < n; ++i) {
-        cin >> n_jug;
-        participantes.push_back(make_pair(j.jugador_ranking(n_jug), 0));
-    }
-}
-
-void Torneo::crear_emparejamientos() {
-    int sz = participantes.size();
-    int h = 1 + ceil(log2(sz));
-    int max = pow(2, h - 1);
-    bool conflicto = (max != sz);
-    
-    emparejamientos = BinTree<int>(1, crear_cuadro(h, conflicto, sz, 1, 3), crear_cuadro(h, conflicto, sz, 2, 3));
-
-    escribir_cuadro(emparejamientos);
-    cout << endl;
-}
-
-void Torneo::procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl) {
-    resultados = crear_cuadro_final(j, emparejamientos, pts_nvl, 1);
-    list<string>::iterator it = list_resultados.begin();
-    escribir_cuadro_final(resultados, it);
-    cout << endl;
-    for (int i = 0; i < participantes.size(); ++i)
-        cout << i + 1 << "." << participantes[i].first << " " << participantes[i].second << endl;
-    anadir_puntos(j);
-    restar_puntos(j);
-    borrar_participantes();
-}
-
 bool Torneo::procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa) {
     string s; cin >> s;
     if (s == "0") return false;
@@ -149,31 +175,5 @@ void Torneo::anadir_puntos(Cjn_Jugadores& j) {
     }
 }
 
-//arreglar cuando se da de baja a un jugador y se vuelve a dar de alta no borrar puntos de ese jugador
-void Torneo::restar_puntos(Cjn_Jugadores& j) {
-    if (not antiguos_participantes.empty()) {
-        for (int i = 0; i < antiguos_participantes.size(); ++i) {
-            if (j.existe_jugador(antiguos_participantes[i].first))
-                j.modificar_jugador(antiguos_participantes[i].first, "ps", -antiguos_participantes[i].second);
-        }
-    }
-}
 
-void Torneo::borrar_participantes() {
-    antiguos_participantes.clear();
-    for (int i = 0; i < participantes.size(); ++i)
-        antiguos_participantes.push_back(make_pair(participantes[i].first, participantes[i].second));
-    participantes.clear();
-    list_resultados.clear();
-}
 
-void Torneo::borrar_jugador(string p) {
-    for (int i = 0; i < antiguos_participantes.size(); i++)
-        if (antiguos_participantes[i].first == p) antiguos_participantes.erase(antiguos_participantes.begin() + i);    
-}
-
-string Torneo::consultar_nombre() const { return nombre; }
-
-int Torneo::consultar_categoria() const { return categoria; }
-
-Torneo::~Torneo() {}

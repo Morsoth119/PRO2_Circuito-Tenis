@@ -13,6 +13,10 @@ using namespace std;
 
 class Jugador 
 {
+    string nombre;
+    int puntos;
+    int Rk, Ts, WM, LM, WS, LS, WG, LG;
+
 public:
 
 //CONSTRUCTORES
@@ -50,8 +54,6 @@ public:
     int consultar_puntos() const; 
 
     int consultar_ranking() const;
-    
-    //hacer un funcion para consultar stats con parametro
 
 //IMPRIMIR
 
@@ -72,11 +74,7 @@ public:
     ~Jugador();
 
 private:
-    string nombre;
-    int puntos;
-    int Rk, Ts, WM, LM, WS, LS, WG, LG;
-    //vector< pair<string,int> > hist_torneos; //historial torneos en los que ha participado y los puntos obtenidos
-
+    
 };
 
 #endif

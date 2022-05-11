@@ -1,10 +1,6 @@
 #include "Cjn_Jugadores.hh"
 
-bool cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b) { 
-    if (a->second.consultar_puntos() == b->second.consultar_puntos()) 
-        return a->second.consultar_ranking() < b->second.consultar_ranking();
-    return a->second.consultar_puntos() > b->second.consultar_puntos();
-}
+// public:
 
 Cjn_Jugadores::Cjn_Jugadores() {}
 
@@ -53,4 +49,12 @@ void Cjn_Jugadores::escribir_jugadores() const {
 
 void Cjn_Jugadores::escribir_jugador(string s) const {
     jugadores.find(s)->second.escribir_jug();
+}
+
+// private:
+
+bool Cjn_Jugadores::cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b) { 
+    if (a->second.consultar_puntos() == b->second.consultar_puntos()) 
+        return a->second.consultar_ranking() < b->second.consultar_ranking();
+    return a->second.consultar_puntos() > b->second.consultar_puntos();
 }
