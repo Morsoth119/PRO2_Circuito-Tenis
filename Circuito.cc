@@ -31,6 +31,14 @@ void Circuito::finalizar_torneo(string t, Cjn_Jugadores& j) {
     (*it).procesar_torneo(j, vec_categorias[(*it).consultar_categoria() - 1].consultar_niveles());
 }
 
+void Circuito::eliminar_jugador_torneos(string p) {
+    list<Torneo>::iterator it = list_torneos.begin();
+    while (it != list_torneos.end()) {
+        (*it).borrar_jugador(p);
+        ++it;
+    }
+}
+
 Torneo Circuito::torneo(string s) const {
     list<Torneo>::const_iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != s) ++it;

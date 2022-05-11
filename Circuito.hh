@@ -72,6 +72,8 @@ public:
     */
     void finalizar_torneo(string t, Cjn_Jugadores& j);
 
+    void eliminar_jugador_torneos(string p);
+
 //CONSULTORES
 
     /**

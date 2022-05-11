@@ -61,6 +61,8 @@ public:
 
     void borrar_participantes();
 
+    void borrar_jugador(string p);
+
 //CONSULTORES
 
     /**
@@ -89,10 +91,8 @@ public:
 private:
     string nombre;
     int categoria;
-    vector< pair< string, int> > participantes;
-    //vector< pair< map<string, Jugador>::iterator, int> > participantes;
-    vector< pair< string, int> > antiguos_participantes;
-    //vector< pair< map<string, Jugador>::iterator, int> > antiguos_participantes;
+    vector< pair<string, int> > participantes;
+    vector< pair<string, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
     list<string> list_resultados;
@@ -113,7 +113,7 @@ private:
 
     BinTree<int> crear_cuadro_final(Cjn_Jugadores& j, const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
 
-    void escribir_cuadro_final(const BinTree<int>& c);
+    void escribir_cuadro_final(const BinTree<int>& c, list<string>::iterator& it);
 
 };
 

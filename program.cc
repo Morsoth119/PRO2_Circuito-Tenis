@@ -9,7 +9,7 @@ void nuevo_jugador(Cjn_Jugadores& j);
 /** @brief Lee un nuevo Torneo y lo añade al Circuito. */
 void nuevo_torneo(Circuito& c);
 /** @brief Da de baja en a un Jugador del Cjn_Jugadores (conjunto de jugadores). */
-void baja_jugador(Cjn_Jugadores& j);
+void baja_jugador(Circuito& c, Cjn_Jugadores& j);
 /** @brief Da de baja en el Circuito a un Torneo. */
 void baja_torneo(Circuito& c, Cjn_Jugadores& j);
 /** @brief Lee la inscripción en el Torneo y se confecciona e imprime el cuadro de emparejamientos de los jugadores inscritos. */
@@ -39,7 +39,7 @@ int main() {
 
         if (com == "nuevo_jugador" or com == "nj") nuevo_jugador(jugadores);
         else if (com == "nuevo_torneo" or com == "nt") nuevo_torneo(circuito);
-        else if (com == "baja_jugador" or com == "bj") baja_jugador(jugadores);
+        else if (com == "baja_jugador" or com == "bj") baja_jugador(circuito, jugadores);
         else if (com == "baja_torneo" or com == "bt") baja_torneo(circuito, jugadores);
         else if (com == "iniciar_torneo" or com == "it") iniciar_torneo(circuito, jugadores);
         else if (com == "finalizar_torneo" or com == "ft") finalizar_torneo(circuito, jugadores);
@@ -98,12 +98,13 @@ void nuevo_torneo(Circuito& c) {
     }
 }
 
-void baja_jugador(Cjn_Jugadores& j) {
+void baja_jugador(Circuito& c, Cjn_Jugadores& j) {
     string p; cin >> p;
     cout << " " << p << endl;
     if (not j.existe_jugador(p)) cout << "error: el jugador no existe" << endl;
     else {
         j.eliminar_jugador(p);
+        c.eliminar_jugador_torneos(p);
         cout << j.num_jugadores() << endl;
     }
 }
