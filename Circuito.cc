@@ -30,7 +30,10 @@ void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
 void Circuito::finalizar_torneo(string t, Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
-    (*it).procesar_torneo(j, vec_categorias[(*it).consultar_categoria() - 1].consultar_niveles());
+    vector<int> pts_nvl(vec_categorias[0].num_niveles());
+    for (int i = 0; i < vec_categorias[0].num_niveles(); ++i)
+        pts_nvl[i] = vec_categorias[(*it).consultar_categoria() - 1].consultar_pts_nivel(i);    
+    (*it).procesar_torneo(j, pts_nvl);
 }
 
 void Circuito::eliminar_jugador_torneos(string p) {

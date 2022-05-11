@@ -10,6 +10,4 @@ string Categoria::consultar_nombre() const { return nombre; }
 
 int Categoria::consultar_pts_nivel(int i) const { return pts_nivel[i]; }
 
-vector<int> Categoria::consultar_niveles() const { return pts_nivel; }
-
 int Categoria::num_niveles() const { return pts_nivel.size(); }
