@@ -57,7 +57,9 @@ public:
 
     void anadir_puntos();
 
-    void eliminar_participantes();
+    void restar_puntos();
+
+    void borrar_participantes();
 
 //CONSULTORES
 
@@ -88,7 +90,7 @@ private:
     string nombre;
     int categoria;
     vector< pair< map<string, Jugador>::iterator, int> > participantes;
-    //vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
+    //vector< pair< string, int> > antiguos_participantes;
     vector< pair< map<string, Jugador>::iterator, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;

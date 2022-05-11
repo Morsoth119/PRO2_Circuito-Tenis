@@ -40,16 +40,17 @@ BinTree<int> Torneo::crear_cuadro_final(const BinTree<int>& c, const vector<int>
         participantes[left.value() - 1].first->second.modificar_stats("lm", 1);
         participantes[right.value() - 1].first->second.modificar_stats("wm", 1);
     }
+    if (not (WSa == 1 and LSa == 0) and not (WSa == 0 and LSa == 1)) {
+        participantes[left.value() - 1].first->second.modificar_stats("ws", WSa);
+        participantes[left.value() - 1].first->second.modificar_stats("ls", LSa);
+        participantes[right.value() - 1].first->second.modificar_stats("ws", LSa);
+        participantes[right.value() - 1].first->second.modificar_stats("ls", WSa);
 
-    participantes[left.value() - 1].first->second.modificar_stats("ws", WSa);
-    participantes[left.value() - 1].first->second.modificar_stats("ls", LSa);
-    participantes[right.value() - 1].first->second.modificar_stats("ws", LSa);
-    participantes[right.value() - 1].first->second.modificar_stats("ls", WSa);
-
-    participantes[left.value() - 1].first->second.modificar_stats("wg", WGa);
-    participantes[left.value() - 1].first->second.modificar_stats("lg", LGa);
-    participantes[right.value() - 1].first->second.modificar_stats("wg", LGa);
-    participantes[right.value() - 1].first->second.modificar_stats("lg", WGa);
+        participantes[left.value() - 1].first->second.modificar_stats("wg", WGa);
+        participantes[left.value() - 1].first->second.modificar_stats("lg", LGa);
+        participantes[right.value() - 1].first->second.modificar_stats("wg", LGa);
+        participantes[right.value() - 1].first->second.modificar_stats("lg", WGa);
+    }
 
     int winner;
     if (WSa > LSa) {
@@ -139,19 +140,23 @@ void Torneo::anadir_puntos() {
         participantes[i].first->second.modificar_stats("ps", participantes[i].second);
         participantes[i].first->second.modificar_stats("ts", 1);
     }
-    if (not antiguos_participantes.empty()) {
-        for (int i = 0; i < antiguos_participantes.size(); ++i)
-            antiguos_participantes[i].first->second.modificar_stats("ps", -antiguos_participantes[i].second);
-    }
-    //antiguos_participantes = participantes;
-    participantes.clear();
+    restar_puntos();
+    borrar_participantes();
 }
 
-void Torneo::eliminar_participantes() {
+// problemas cuando se borra un Jugador de un torneo antiguo
+void Torneo::restar_puntos() {
     if (not antiguos_participantes.empty()) {
         for (int i = 0; i < antiguos_participantes.size(); ++i)
             antiguos_participantes[i].first->second.modificar_stats("ps", -antiguos_participantes[i].second);
     }
+}
+
+void Torneo::borrar_participantes() {
+    antiguos_participantes.clear();
+    for (int i = 0; i < participantes.size(); ++i) antiguos_participantes.push_back(participantes[i]);
+        //antiguos_participantes.push_back(make_pair(participantes[i].first->second.consultar_nombre(), participantes[i].second))
+    participantes.clear();
 }
 
 string Torneo::consultar_nombre() const { return nombre; }
