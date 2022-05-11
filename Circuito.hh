@@ -75,6 +75,11 @@ public:
     */
     void finalizar_torneo(string t, Cjn_Jugadores& j);
 
+    /**
+        @brief Finaliza un Torneo.
+        @pre existe el Torneo con nombre 't' y el Torneo 't' ha sido iniciado previamente
+        @post ???
+    */
     void eliminar_jugador_torneos(string p);
 
 //CONSULTORES

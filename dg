@@ -1,0 +1,5 @@
+#!/bin/sh
+
+clear
+doxygen Doxyfile
+firefox DOXYGEN/html/index.html
