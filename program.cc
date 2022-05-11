@@ -11,11 +11,11 @@ void nuevo_torneo(Circuito& c);
 /** @brief Da de baja en a un Jugador del Cjn_Jugadores (conjunto de jugadores). */
 void baja_jugador(Cjn_Jugadores& j);
 /** @brief Da de baja en el Circuito a un Torneo. */
-void baja_torneo(Circuito& c, Cjn_Jugadores& j);
+void baja_torneo(Circuito& c);
 /** @brief Lee la inscripción en el Torneo y se confecciona e imprime el cuadro de emparejamientos de los jugadores inscritos. */
 void iniciar_torneo(Circuito& c, Cjn_Jugadores& j);
 /** @brief Se leen los resultados del Torneo, se produce e imprime el cuadro oficial de resultados, y se listan los puntos para el ranking ganados por cada uno de los participantes; también se actualiza el ranking y las estadísticas de los jugadores. */
-void finalizar_torneo(Circuito& c);
+void finalizar_torneo(Circuito& c, Cjn_Jugadores& j);
 /** @brief Se listan, por orden creciente de ranking actual, la posición, el nombre y los puntos de cada Jugador del Circuito. */
 void listar_ranking(Cjn_Jugadores& j);
 /** @brief Se listan, por orden creciente de identificador (nombre), el nombre, la posición en el ranking, los puntos y el resto de las estadísticas de cada Jugador del Circuito. */
@@ -40,9 +40,9 @@ int main() {
         if (com == "nuevo_jugador" or com == "nj") nuevo_jugador(jugadores);
         else if (com == "nuevo_torneo" or com == "nt") nuevo_torneo(circuito);
         else if (com == "baja_jugador" or com == "bj") baja_jugador(jugadores);
-        else if (com == "baja_torneo" or com == "bt") baja_torneo(circuito, jugadores);
+        else if (com == "baja_torneo" or com == "bt") baja_torneo(circuito);
         else if (com == "iniciar_torneo" or com == "it") iniciar_torneo(circuito, jugadores);
-        else if (com == "finalizar_torneo" or com == "ft") finalizar_torneo(circuito);
+        else if (com == "finalizar_torneo" or com == "ft") finalizar_torneo(circuito, jugadores);
         else if (com == "listar_ranking" or com == "lr") listar_ranking(jugadores);
         else if (com == "listar_jugadores" or com == "lj") listar_jugadores(jugadores);
         else if (com == "consultar_jugador" or com == "cj") consultar_jugador(jugadores);
@@ -108,13 +108,12 @@ void baja_jugador(Cjn_Jugadores& j) {
     }
 }
 
-void baja_torneo(Circuito& c, Cjn_Jugadores& j) {
+void baja_torneo(Circuito& c) {
     string t; cin >> t;
     cout << " " << t << endl;
     if (not c.existe_torneo(t)) cout << "error: el torneo no existe" << endl;
     else {
-        c.eliminar_torneo(t);
-        j.actualizar_puntos_torneo(t); //restar los puntos a los jugadores
+        c.eliminar_torneo(t); //restar puntos torneo
         cout << c.num_torneos() << endl;
     }
 }
@@ -125,10 +124,11 @@ void iniciar_torneo(Circuito& c, Cjn_Jugadores& j) {
     c.iniciar_torneo(t, j);
 }
 
-void finalizar_torneo(Circuito& c) {
+void finalizar_torneo(Circuito& c, Cjn_Jugadores& j) {
     string t; cin >> t;
     cout << " " << t << endl;
     c.finalizar_torneo(t);
+    j.actualizar_ranking();
 }
 
 void listar_ranking(Cjn_Jugadores& j) {

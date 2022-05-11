@@ -14,6 +14,7 @@ void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 
 void Circuito::eliminar_torneo(string t) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
+    (*it).eliminar_participantes();
     list_torneos.erase(it);
 }
 

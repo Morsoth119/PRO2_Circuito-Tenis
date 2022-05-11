@@ -53,14 +53,11 @@ public:
     */
     void procesar_torneo(const vector<int>& pts_nvl);
 
-    bool procesar_partido(int& WSa, int& LSa);
+    bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
 
-    /*
-        @brief Borra todos los participantes del Torneo.
-        @pre <em>cierto</em>
-        @post elimina a los participantes del Torneo actual y tambien el arbol de partidos
-    */
-    //void borrar_participantes();
+    void anadir_puntos();
+
+    void eliminar_participantes();
 
 //CONSULTORES
 
@@ -92,7 +89,7 @@ private:
     int categoria;
     vector< pair< map<string, Jugador>::iterator, int> > participantes;
     //vector< pair<string, int> > participantes; //nombre del jugador y ¿puntos que gana al final del torneo?
-    vector< pair<string, int> > antiguos_participantes;
+    vector< pair< map<string, Jugador>::iterator, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
     list<string> list_resultados;

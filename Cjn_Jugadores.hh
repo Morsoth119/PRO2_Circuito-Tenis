@@ -51,7 +51,7 @@ public:
         @pre ???
         @post elimina los puntos que ganaron de todos los jugadores que participaron en el Torneo 't'
     */
-    void actualizar_puntos_torneo(string t);
+    void actualizar_ranking();
 
 //CONSULTORES
 

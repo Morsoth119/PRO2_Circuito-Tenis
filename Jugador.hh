@@ -31,7 +31,7 @@ public:
         @pre puntos - 'pts' >= 0
         @post puntos += 'pts' ('pts' puede ser negativo)
     */
-    void modificar_stats(int pts, int Ts, int WM, int LM, int WS, int LS, int WG, int LG);
+    void modificar_stats(string stat, int n);
 
 //CONSULTORES
 
@@ -48,6 +48,8 @@ public:
         @post devuelve la variable puntos
     */
     int consultar_puntos() const; 
+
+    int consultar_ranking() const;
     
     //hacer un funcion para consultar stats con parametro
 

@@ -1,6 +1,10 @@
 #include "Cjn_Jugadores.hh"
 
-//bool cmp(const pair<string, int>& a, const pair<string, int>& b) { return a.second > b.second; }
+bool cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b) { 
+    if (a->second.consultar_puntos() == b->second.consultar_puntos()) 
+        return a->second.consultar_ranking() < b->second.consultar_ranking();
+    return a->second.consultar_puntos() > b->second.consultar_puntos();
+}
 
 Cjn_Jugadores::Cjn_Jugadores() {}
 
@@ -17,9 +21,9 @@ void Cjn_Jugadores::eliminar_jugador(string p) {
     jugadores.erase(jugadores.find(p));
 }
 
-void Cjn_Jugadores::actualizar_puntos_torneo(string t) {
-    string s = t;
-    // TODO
+void Cjn_Jugadores::actualizar_ranking() {
+    sort(ranking.begin(), ranking.end(), cmp);
+    for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
 }
 
 bool Cjn_Jugadores::existe_jugador(string s) const { return (jugadores.find(s) != jugadores.end()); }
