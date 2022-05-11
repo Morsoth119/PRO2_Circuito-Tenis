@@ -145,10 +145,9 @@ void Torneo::anadir_puntos(Cjn_Jugadores& j) {
     }
 }
 
-// problemas cuando se borra un Jugador de un torneo antiguo
 void Torneo::restar_puntos(Cjn_Jugadores& j) {
     if (not antiguos_participantes.empty()) {
-        for (int i = 0; i < antiguos_participantes.size(); ++i) {//antiguos_participantes[i].first->second.modificar_stats("ps", -antiguos_participantes[i].second);
+        for (int i = 0; i < antiguos_participantes.size(); ++i) {
             if (j.existe_jugador(antiguos_participantes[i].first))
                 j.modificar_jugador(antiguos_participantes[i].first, "ps", -antiguos_participantes[i].second);
         }
