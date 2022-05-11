@@ -2,6 +2,5 @@
 *.o
 *.exe
 *.tar
-tests/out.txt
 DOXYGEN/
 Competencia Transversal/
