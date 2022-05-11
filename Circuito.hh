@@ -56,7 +56,7 @@ public:
         @pre existe el Torneo con nombre 't'
         @post elimina el Torneo con nombre 't' de la lista de torneos
     */
-    void eliminar_torneo(string t);
+    void eliminar_torneo(string t, Cjn_Jugadores& j);
 
     /**
         @brief Inicia un Torneo.
@@ -70,7 +70,7 @@ public:
         @pre existe el Torneo con nombre 't' y el Torneo 't' ha sido iniciado previamente
         @post ???
     */
-    void finalizar_torneo(string t);
+    void finalizar_torneo(string t, Cjn_Jugadores& j);
 
 //CONSULTORES
 

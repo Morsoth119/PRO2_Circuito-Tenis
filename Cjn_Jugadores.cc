@@ -21,6 +21,11 @@ void Cjn_Jugadores::eliminar_jugador(string p) {
     for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
 }
 
+void Cjn_Jugadores::modificar_jugador(string s, string stat, int n) {
+    map<string, Jugador>::iterator it = jugadores.find(s);
+    (*it).second.modificar_stats(stat, n);
+}
+
 void Cjn_Jugadores::actualizar_ranking() {
     sort(ranking.begin(), ranking.end(), cmp);
     for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
@@ -28,7 +33,7 @@ void Cjn_Jugadores::actualizar_ranking() {
 
 bool Cjn_Jugadores::existe_jugador(string s) const { return (jugadores.find(s) != jugadores.end()); }
 
-map<string, Jugador>::iterator Cjn_Jugadores::jugador_ranking(int n) const { return ranking[n - 1]; }
+string Cjn_Jugadores::jugador_ranking(int n) const { return ranking[n - 1]->first; }
 
 int Cjn_Jugadores::num_jugadores() const { return ranking.size(); }
 

@@ -46,6 +46,8 @@ public:
     */
     void eliminar_jugador(string p);
 
+    void modificar_jugador(string s, string stat, int n);
+
     /**
         @brief Elimina los puntos de anteriores ediciones del Torneo.
         @pre ???
@@ -67,7 +69,7 @@ public:
         @pre 1 <= 'n' <= ranking.size()
         @post devuelve el jugador en el puesto 'n' del ranking
     */
-    map<string, Jugador>::iterator jugador_ranking(int n) const;
+    string jugador_ranking(int n) const;
 
     /**
         @brief Devuelve el numero de jugadores que hay inscritos.

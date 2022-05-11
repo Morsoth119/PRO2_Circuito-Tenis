@@ -51,13 +51,13 @@ public:
         @pre existe un Torneo iniciado
         @post ???
     */
-    void procesar_torneo(const vector<int>& pts_nvl);
+    void procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl);
 
     bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
 
-    void anadir_puntos();
+    void anadir_puntos(Cjn_Jugadores& j);
 
-    void restar_puntos();
+    void restar_puntos(Cjn_Jugadores& j);
 
     void borrar_participantes();
 
@@ -89,9 +89,10 @@ public:
 private:
     string nombre;
     int categoria;
-    vector< pair< map<string, Jugador>::iterator, int> > participantes;
-    //vector< pair< string, int> > antiguos_participantes;
-    vector< pair< map<string, Jugador>::iterator, int> > antiguos_participantes;
+    vector< pair< string, int> > participantes;
+    //vector< pair< map<string, Jugador>::iterator, int> > participantes;
+    vector< pair< string, int> > antiguos_participantes;
+    //vector< pair< map<string, Jugador>::iterator, int> > antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
     list<string> list_resultados;
@@ -110,7 +111,7 @@ private:
     */
     void escribir_cuadro(const BinTree<int>& e);
 
-    BinTree<int> crear_cuadro_final(const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
+    BinTree<int> crear_cuadro_final(Cjn_Jugadores& j, const BinTree<int>& c, const vector<int>& pts_nvl, int nvl);
 
     void escribir_cuadro_final(const BinTree<int>& c);
 

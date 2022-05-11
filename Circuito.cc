@@ -11,10 +11,10 @@ void Circuito::anadir_torneo(Torneo t) {
 
 void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
 
-void Circuito::eliminar_torneo(string t) {
+void Circuito::eliminar_torneo(string t, Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
-    (*it).restar_puntos();
+    (*it).restar_puntos(j);
     list_torneos.erase(it);
 }
 
@@ -25,10 +25,10 @@ void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
     (*it).crear_emparejamientos();
 }
 
-void Circuito::finalizar_torneo(string t) {
+void Circuito::finalizar_torneo(string t, Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
-    (*it).procesar_torneo(vec_categorias[(*it).consultar_categoria() - 1].consultar_niveles());
+    (*it).procesar_torneo(j, vec_categorias[(*it).consultar_categoria() - 1].consultar_niveles());
 }
 
 Torneo Circuito::torneo(string s) const {
