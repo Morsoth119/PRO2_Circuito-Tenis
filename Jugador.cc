@@ -2,13 +2,13 @@
 
 // public:
 
-Jugador::Jugador(string p, int rank) {
+Jugador::Jugador(const string& p, int rank) {
     nombre = p;
     Rk = rank;
     puntos = Ts = WM = LM = WS = LS = WG = LG = 0;
 }
 
-void Jugador::modificar_stats(string stat, int n) { 
+void Jugador::modificar_stats(const string& stat, int n) { 
     if (stat == "ps") puntos += n;
     else if (stat == "rk") Rk = n;
     else if (stat == "ts") Ts += n;

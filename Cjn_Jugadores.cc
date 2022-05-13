@@ -4,12 +4,12 @@
 
 Cjn_Jugadores::Cjn_Jugadores() {}
 
-void Cjn_Jugadores::anadir_jugador(string s, Jugador p) {
+void Cjn_Jugadores::anadir_jugador(const string& s, Jugador p) {
     jugadores.insert(make_pair(s, p));
     ranking.push_back(jugadores.find(s));
 }
 
-void Cjn_Jugadores::eliminar_jugador(string p) {
+void Cjn_Jugadores::eliminar_jugador(const string& p) {
     int i = 0;
     while (ranking[i]->first != p) ++i;
     ranking.erase(ranking.begin() + i);
@@ -17,7 +17,7 @@ void Cjn_Jugadores::eliminar_jugador(string p) {
     for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
 }
 
-void Cjn_Jugadores::modificar_jugador(string s, string stat, int n) {
+void Cjn_Jugadores::modificar_jugador(const string& s, const string& stat, int n) {
     map<string, Jugador>::iterator it = jugadores.find(s);
     (*it).second.modificar_stats(stat, n);
 }
@@ -27,7 +27,7 @@ void Cjn_Jugadores::actualizar_ranking() {
     for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
 }
 
-bool Cjn_Jugadores::existe_jugador(string s) const { return (jugadores.find(s) != jugadores.end()); }
+bool Cjn_Jugadores::existe_jugador(const string& s) const { return (jugadores.find(s) != jugadores.end()); }
 
 string Cjn_Jugadores::jugador_ranking(int n) const { return ranking[n - 1]->first; }
 
@@ -47,7 +47,7 @@ void Cjn_Jugadores::escribir_jugadores() const {
     }
 }
 
-void Cjn_Jugadores::escribir_jugador(string s) const {
+void Cjn_Jugadores::escribir_jugador(const string& s) const {
     jugadores.find(s)->second.escribir_jug();
 }
 

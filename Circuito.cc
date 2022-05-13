@@ -13,21 +13,21 @@ void Circuito::anadir_torneo(Torneo t) {
 
 void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
 
-void Circuito::eliminar_torneo(string t, Cjn_Jugadores& j) {
+void Circuito::eliminar_torneo(const string& t, Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
     (*it).restar_puntos(j);
     list_torneos.erase(it);
 }
 
-void Circuito::iniciar_torneo(string t, const Cjn_Jugadores& j) {
+void Circuito::iniciar_torneo(const string& t, const Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
     (*it).anadir_participantes(j);
     (*it).crear_emparejamientos();
 }
 
-void Circuito::finalizar_torneo(string t, Cjn_Jugadores& j) {
+void Circuito::finalizar_torneo(const string& t, Cjn_Jugadores& j) {
     list<Torneo>::iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != t) ++it;
     vector<int> pts_nvl(vec_categorias[0].num_niveles());
@@ -36,7 +36,7 @@ void Circuito::finalizar_torneo(string t, Cjn_Jugadores& j) {
     (*it).procesar_torneo(j, pts_nvl);
 }
 
-void Circuito::eliminar_jugador_torneos(string p) {
+void Circuito::eliminar_jugador_torneos(const string& p) {
     list<Torneo>::iterator it = list_torneos.begin();
     while (it != list_torneos.end()) {
         (*it).borrar_jugador(p);
@@ -44,7 +44,7 @@ void Circuito::eliminar_jugador_torneos(string p) {
     }
 }
 
-Torneo Circuito::torneo(string s) const {
+Torneo Circuito::torneo(const string& s) const {
     list<Torneo>::const_iterator it = list_torneos.begin();
     while ((*it).consultar_nombre() != s) ++it;
     return (*it);
@@ -54,7 +54,7 @@ int Circuito::num_categorias() const { return vec_categorias.size(); }
 
 int Circuito::num_torneos() const { return list_torneos.size(); }
 
-bool Circuito::existe_torneo(string s) const {
+bool Circuito::existe_torneo(const string& s) const {
     list<Torneo>::const_iterator it = list_torneos.begin();
     while (it != list_torneos.end() and (*it).consultar_nombre() != s) ++it;
     return (it != list_torneos.end());

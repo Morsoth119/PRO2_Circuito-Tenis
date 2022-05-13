@@ -59,28 +59,28 @@ public:
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
         @post elimina el Torneo con nombre <b style="color: #ff8033">t</b> de la lista de torneos y resta los puntos de la ultima edicion de tal Torneo a todos los jugadores que participaron
     */
-    void eliminar_torneo(string t, Cjn_Jugadores& j);
+    void eliminar_torneo(const string& t, Cjn_Jugadores& j);
 
     /**
         @brief Inicia un Torneo.
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
         @post añade los participantes al torneo y crea los emparejamientos
     */
-    void iniciar_torneo(string t, const Cjn_Jugadores& j);
+    void iniciar_torneo(const string& t, const Cjn_Jugadores& j);
 
     /**
         @brief Finaliza un Torneo.
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b> y el Torneo <b style="color: #ff8033">t</b> ha sido iniciado previamente
         @post lee y procesa los resultados del Torneo <b style="color: #ff8033">t</b> y suma o resta los puntos correspondientes a cada Jugador
     */
-    void finalizar_torneo(string t, Cjn_Jugadores& j);
+    void finalizar_torneo(const string& t, Cjn_Jugadores& j);
 
     /**
         @brief Elimina un Jugador del registro de la ultima edicion de todos los torneos.
         @pre <em>cierto</em>
         @post elimina el Jugador con nombre <b style="color: #ff8033">p</b> de la lista de antiguos participantes de todos los torneos del Circuito
     */
-    void eliminar_jugador_torneos(string p);
+    void eliminar_jugador_torneos(const string& p);
 
 //CONSULTORES
 
@@ -89,7 +89,7 @@ public:
         @pre existe un torneo con el nombre <b style="color: #ff8033">s</b>
         @post devuelve el Torneo con el nombre <b style="color: #ff8033">s</b>
     */
-    Torneo torneo(string s) const;
+    Torneo torneo(const string& s) const;
 
     /**
         @brief Devuelve el numero de categorias existente.
@@ -110,7 +110,7 @@ public:
         @pre <em>cierto</em>
         @post devuelve <b>true</b> si existe un Torneo con el nombre <b style="color: #ff8033">s</b>, de lo contrario devuelve <b>false</b>
     */
-    bool existe_torneo(string s) const;
+    bool existe_torneo(const string& s) const;
 
 //IMPRIMIR
 

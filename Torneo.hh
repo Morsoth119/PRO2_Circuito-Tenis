@@ -17,12 +17,17 @@ using namespace std;
 #include "Categoria.hh"
 #include "BinTree.hh"
 
+struct Participante {
+    string nombre;
+    int pts;
+};
+
 class Torneo 
 {
     string nombre;
     int categoria;
-    vector< pair<string, int> > participantes;
-    vector< pair<string, int> > antiguos_participantes;
+    vector<Participante> participantes;
+    vector<Participante> antiguos_participantes;
     BinTree<int> emparejamientos;
     BinTree<int> resultados;
     list<string> list_resultados;

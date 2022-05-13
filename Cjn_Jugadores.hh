@@ -38,16 +38,16 @@ public:
         @pre no existe un Jugador con el mismo nombre 'p'
         @post añade el Jugador 'p' al final del vector ranking y al mapa de jugadores
     */
-    void anadir_jugador(string s, Jugador p);
+    void anadir_jugador(const string& s, Jugador p);
 
     /**
         @brief Elimina un Jugador del ranking y del mapa de jugadores.
         @pre existe un Jugador con el nombre 'p'
         @post elimina el Jugador 'p' del vector ranking y del mapa de jugadores
     */
-    void eliminar_jugador(string p);
+    void eliminar_jugador(const string& p);
 
-    void modificar_jugador(string s, string stat, int n);
+    void modificar_jugador(const string& s, const string& stat, int n);
 
     /**
         @brief Elimina los puntos de anteriores ediciones del Torneo.
@@ -63,7 +63,7 @@ public:
         @pre <em>cierto</em>
         @post devuelve true si existe un Jugador con el nombre 's'
     */
-    bool existe_jugador(string s) const;
+    bool existe_jugador(const string& s) const;
 
     /**
         @brief Devuelve el Jugador que ocupa esa posicion en el ranking.
@@ -100,7 +100,7 @@ public:
         @pre existe el Jugador con nombre 's'
         @post escribe el Jugador con nombre 's' por consola
     */
-    void escribir_jugador(string s) const;
+    void escribir_jugador(const string& s) const;
 
 private:
 

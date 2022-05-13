@@ -25,7 +25,7 @@ public:
         @pre <em>cierto</em>
         @post el resultado es una Categoria con el nombre <b style="color: #ff8033">s</b>
     */
-    Categoria(string s);
+    Categoria(const string& s);
 
 //MODIFICADORES
 

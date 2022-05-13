@@ -25,7 +25,7 @@ public:
         @pre <em>cierto</em>
         @post el resultado es un Jugador con nombre 'p' i 0 en todas sus estadisticas
     */
-    Jugador(string p, int rank);
+    Jugador(const string& p, int rank);
 
 //MODIFICADORES
 
@@ -34,7 +34,7 @@ public:
         @pre puntos - 'pts' >= 0
         @post puntos += 'pts' ('pts' puede ser negativo)
     */
-    void modificar_stats(string stat, int n);
+    void modificar_stats(const string& stat, int n);
 
 //CONSULTORES
 

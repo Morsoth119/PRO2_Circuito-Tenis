@@ -2,7 +2,7 @@
 
 // public:
 
-Categoria::Categoria(string s) { nombre = s; }
+Categoria::Categoria(const string& s) { nombre = s; }
 
 void Categoria::anadir_pts_nivel(const vector<int>& v) { pts_nivel = v; }
 
