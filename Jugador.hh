@@ -7,7 +7,6 @@
 
 #ifndef NO_DIAGRAM
 #include <iostream>
-#include <vector>
 using namespace std;
 #endif
 
@@ -74,7 +73,7 @@ public:
     ~Jugador();
 
 private:
-    
+
 };
 
 #endif

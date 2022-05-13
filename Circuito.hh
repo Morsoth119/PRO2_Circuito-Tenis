@@ -36,49 +36,49 @@ public:
     /**
         @brief Añade una Categoria nueva al Circuito.
         @pre <em>cierto</em>
-        @post añade la Categoria 'c' al vector de categorias
+        @post añade la Categoria <b style="color: #ff8033">c</b> al vector de categorias
     */
     void anadir_categoria(Categoria c);
 
     /**
         @brief Añade un Torneo nuevo al Circuito.
         @pre <em>cierto</em>
-        @post añade el Torneo 't' a la lista de torneos y reordena la lista por orden alfabetico
+        @post añade el Torneo <b style="color: #ff8033">t</b> a la lista de torneos y reordena la lista por orden alfabetico
     */
     void anadir_torneo(Torneo t);
 
     /**
         @brief Añade los puntos por niveles a una Categoria.
-        @pre 0 <= 'i' < vec_categorias.size(); 'v' no vacio
-        @post los pts por nivel de la Categoria 'i' pasan a ser 'v'
+        @pre 0 <= <b style="color: #ff8033">i</b> < vec_categorias.size(); <b style="color: #ff8033">v</b> no vacio
+        @post los pts por nivel de la Categoria <b style="color: #ff8033">i</b> pasan a ser <b style="color: #ff8033">v</b>
     */
     void anadir_niveles(int i, const vector<int>& v);
 
     /**
         @brief Elimina un Torneo del Circuito.
-        @pre existe el Torneo con nombre 't'
-        @post elimina el Torneo con nombre 't' de la lista de torneos
+        @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
+        @post elimina el Torneo con nombre <b style="color: #ff8033">t</b> de la lista de torneos y resta los puntos de la ultima edicion de tal Torneo a todos los jugadores que participaron
     */
     void eliminar_torneo(string t, Cjn_Jugadores& j);
 
     /**
         @brief Inicia un Torneo.
-        @pre existe el Torneo con nombre 't'
+        @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
         @post añade los participantes al torneo y crea los emparejamientos
     */
     void iniciar_torneo(string t, const Cjn_Jugadores& j);
 
     /**
         @brief Finaliza un Torneo.
-        @pre existe el Torneo con nombre 't' y el Torneo 't' ha sido iniciado previamente
-        @post ???
+        @pre existe el Torneo con nombre <b style="color: #ff8033">t</b> y el Torneo <b style="color: #ff8033">t</b> ha sido iniciado previamente
+        @post lee y procesa los resultados del Torneo <b style="color: #ff8033">t</b> y suma o resta los puntos correspondientes a cada Jugador
     */
     void finalizar_torneo(string t, Cjn_Jugadores& j);
 
     /**
-        @brief Finaliza un Torneo.
-        @pre existe el Torneo con nombre 't' y el Torneo 't' ha sido iniciado previamente
-        @post ???
+        @brief Elimina un Jugador del registro de la ultima edicion de todos los torneos.
+        @pre <em>cierto</em>
+        @post elimina el Jugador con nombre <b style="color: #ff8033">p</b> de la lista de antiguos participantes de todos los torneos del Circuito
     */
     void eliminar_jugador_torneos(string p);
 
@@ -86,15 +86,15 @@ public:
 
     /**
         @brief Devuelve el Torneo seleccionado.
-        @pre existe un torneo con el nombre 's'
-        @post devuelve el Torneo con el nombre 's'
+        @pre existe un torneo con el nombre <b style="color: #ff8033">s</b>
+        @post devuelve el Torneo con el nombre <b style="color: #ff8033">s</b>
     */
     Torneo torneo(string s) const;
 
     /**
         @brief Devuelve el numero de categorias existente.
         @pre <em>cierto</em>
-        @post devuelve el tamaño del vector categorias
+        @post devuelve el tamaño del vector de categorias
     */
     int num_categorias() const;
 
@@ -108,7 +108,7 @@ public:
     /**
         @brief Comprueba si existe el Torneo seleccionado.
         @pre <em>cierto</em>
-        @post devuelve true si existe un Torneo con el nombre 's', de lo contrario devuelve false
+        @post devuelve <b>true</b> si existe un Torneo con el nombre <b style="color: #ff8033">s</b>, de lo contrario devuelve <b>false</b>
     */
     bool existe_torneo(string s) const;
 
@@ -133,7 +133,7 @@ private:
     /**
         @brief Compara dos torneos por orden alfabetico.
         @pre <em>cierto</em>
-        @post devuelve true si el nombre de 'a' va antes que el de 'b', de lo contrario devuelve false
+        @post devuelve <b>true</b> si el nombre de <b style="color: #ff8033">a</b> va antes que el de <b style="color: #ff8033">b</b>, de lo contrario devuelve <b>false</b>
     */
     static bool cmp(const Torneo& a, const Torneo& b);
 

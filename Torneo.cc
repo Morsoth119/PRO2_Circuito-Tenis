@@ -8,7 +8,6 @@ Torneo::Torneo(string t, int c) {
 }
 
 void Torneo::anadir_participantes(const Cjn_Jugadores& j) {
-    participantes.clear();
     int n, n_jug; cin >> n;
     for (int i = 0; i < n; ++i) {
         cin >> n_jug;
@@ -47,17 +46,9 @@ void Torneo::restar_puntos(Cjn_Jugadores& j) {
     }
 }
 
-void Torneo::borrar_participantes() {
-    antiguos_participantes.clear();
-    for (int i = 0; i < participantes.size(); ++i)
-        antiguos_participantes.push_back(make_pair(participantes[i].first, participantes[i].second));
-    participantes.clear();
-    list_resultados.clear();
-}
-
 void Torneo::borrar_jugador(string p) {
-    for (int i = 0; i < antiguos_participantes.size(); i++)
-        if (antiguos_participantes[i].first == p) antiguos_participantes.erase(antiguos_participantes.begin() + i);    
+    for (int i = 0; i < antiguos_participantes.size(); ++i)
+        if (antiguos_participantes[i].first == p) antiguos_participantes[i].second = 0;    
 }
 
 string Torneo::consultar_nombre() const { return nombre; }
@@ -175,5 +166,11 @@ void Torneo::anadir_puntos(Cjn_Jugadores& j) {
     }
 }
 
-
+void Torneo::borrar_participantes() {
+    antiguos_participantes.clear();
+    for (int i = 0; i < participantes.size(); ++i)
+        antiguos_participantes.push_back(make_pair(participantes[i].first, participantes[i].second));
+    participantes.clear();
+    list_resultados.clear();
+}
 

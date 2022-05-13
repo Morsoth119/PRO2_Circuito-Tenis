@@ -8,8 +8,8 @@
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <vector>
-#include <map>
 #include <cmath>
+#include <list>
 using namespace std;
 #endif
 
@@ -63,8 +63,6 @@ public:
 
     void restar_puntos(Cjn_Jugadores& j);
 
-    void borrar_participantes();
-
     void borrar_jugador(string p);
 
 //CONSULTORES
@@ -110,6 +108,8 @@ private:
     bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
 
     void anadir_puntos(Cjn_Jugadores& j);
+
+    void borrar_participantes();
 
 };
 
