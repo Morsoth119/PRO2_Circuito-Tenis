@@ -10,7 +10,7 @@
 
 <a id="instalacion"></a>
 
-### Instalación
+## Instalación
 1. Clonar el repositorio en tu ordenador:
 ```sh
 clone
@@ -18,7 +18,7 @@ clone
 
 <a id="ejecucion"></a>
 
-### Ejecución
+## Ejecución
 1. Instalar _meld_:
     * `$ sudo apt install meld`
 2. Ejecutar el archivo **run**:
@@ -26,15 +26,15 @@ clone
 
 <a id="doxygen"></a>
 
-### Doxygen
+## Doxygen
 1. Ejecutar el archivo **dg**:
     * `$ ./dg`
 
 <a id="modificar"></a>
 
-### Modificar Proyecto
+## Modificar Proyecto
 
 <a id="licencia"></a>
 
-### Licencia
+## Licencia
 
