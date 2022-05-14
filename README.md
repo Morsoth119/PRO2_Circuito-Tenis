@@ -121,7 +121,9 @@ doxygen -g
 ![Doxygen](img/dg.png)
 
 4. Modificar los archivos de la práctica:
+
     * Estos són todos lo archivos que yo he usado para la práctica (todos escritos por mi escepto [BinTree.hh](BinTree.hh)).
+    
 * [program.cc](program.cc)
 * [Circuito.hh](Circuito.hh)
 * [Circuito.cc](Circuito.cc)
