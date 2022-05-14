@@ -1,6 +1,6 @@
 <div style="text-align:center">
 
-![Imagen Titulo](img/banner.png)
+# 🎾 PRO2 - Circuito Tenis 🎾
 
 **Explicación del Proyecto**
 
