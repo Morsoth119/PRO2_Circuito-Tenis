@@ -15,7 +15,7 @@
 ## Instalación
 1. Clonar el repositorio en tu ordenador:
 ```sh
-clone
+git clone https://github.com/Morsoth119/PRO2_Circuito-Tenis.git
 ```
 
 <a id="ejecucion"></a>
