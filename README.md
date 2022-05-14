@@ -81,9 +81,9 @@ make clean
 
 <a id="modificar-makefile"></a>
 
-1. Modificar el archivo [Makefile](Makefile):
+#### Modificar el archivo [Makefile](Makefile):
 
-    * Este archivo nos automatiza tareas en las que se ven envueltos varios archivos.
+Este archivo nos automatiza tareas en las que se ven envueltos varios archivos.
 * En caso de necesitar un nuevo archivo para compilar simplemente habrá que añadir estas lineas de código al archivo [Makefile](Makefile) ya existente:
 
 ![Compilacion](img/comp.png) 
@@ -98,9 +98,9 @@ make clean
 
 <a id="modificar-io"></a>
 
-2. Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
+#### Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
 
-    * Estos archivos se encargan de automatizar la tarea de introducir la entrada y comparar la salida del programa.
+Estos archivos se encargan de automatizar la tarea de introducir la entrada y comparar la salida del programa.
 
 * En el caso de necesitar modificar la entrada, simplemente deberemos modificar el archivo [inp.txt](tests/inp.txt).
 
@@ -112,9 +112,9 @@ make clean
 
 <a id="modificar-doxyfile"></a>
 
-3. Modificar el archivo [dg](dg) y el [Doxyfile](Doxtfile):
+#### Modificar el archivo [dg](dg) y el [Doxyfile](Doxtfile):
 
-    * Doxygen es una herramienta web para visualizar de forma clara la estructura de un programa modular.
+Doxygen es una herramienta web para visualizar de forma clara la estructura de un programa modular.
 
 * En el caso de querer modificar el archivo [Doxyfile](Doxtfile), dentro de este se encuentra una breve explicación de lo que hace cada opción, por lo que sólo has de ir leyendo y modificando a tu gusto.
 * También existe la opción de crear un archivo Doxyfile totalmente nuevo. Para ello primero deberemos eliminar el ya existente:
@@ -132,9 +132,9 @@ doxygen -g
 
 <a id="modificar-prac"></a>
 
-4. Modificar los archivos de la práctica:
+#### Modificar los archivos de la práctica:
 
-    * Estos són todos lo archivos que yo he usado para la práctica (todos escritos por mi excepto [BinTree.hh](BinTree.hh)).
+Estos són todos lo archivos que yo he usado para la práctica (todos escritos por mi excepto [BinTree.hh](BinTree.hh)).
 
 * [program.cc](program.cc)
 * [Circuito.hh](Circuito.hh)
