@@ -86,6 +86,8 @@ make clean
 
 ![Practica](img/practica.png)
 
+* También podremos modificar nuestra función "clean" para que elimine otros archivos no deseados:
+
 2. Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
 
     * Estos archivos se encargan de automatizar la tarea de introducir la entrada y comparar la salida del programa.
