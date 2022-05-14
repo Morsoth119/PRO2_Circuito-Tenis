@@ -5,8 +5,6 @@
 [Instalación](#instalacion) • [Ejecución](#ejecucion) • [Doxygen](#doxygen) • [Modificar Proyecto](#modificar) • [Licencia](#licencia)
 </div>
 
----
-
 <a id="instalacion"></a>
 
 ### Instalación
@@ -20,13 +18,13 @@ clone
 ### Ejecución
 1. Instalar _meld_:
     * `$ sudo apt install meld`
-2. Ejecutar el archivo `run`:
+2. Ejecutar el archivo **run**:
     * `$ ./run`
 
 <a id="doxygen"></a>
 
 ### Doxygen
-1. Ejecutar el archivo `dg`:
+1. Ejecutar el archivo **dg**:
     * `$ ./dg`
 
 <a id="modificar"></a>
