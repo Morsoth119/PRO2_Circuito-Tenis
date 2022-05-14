@@ -88,11 +88,19 @@ make clean
 
 2. Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
 
-![Run](img/run.png)
+    * Estos archivos se encargan de automatizar la tarea de introducir la entrada y comparar la salida del programa.
+
+* En el caso de necesitar modificar la entrada, simplemente deberemos modificar el archivo [inp.txt](tests/inp.txt).
+
+* En el caso de necesitar comparar nuestra salida con otro archivo, tendremos que sustituir el contenido del archivo [sample_out.txt](tests/sample_out.txt) con el deseado.
+
+* 
+
+![Run](img/run.pngs)
 
 3. Modificar el archivo [dg](dg) y el [Doxyfile](Doxtfile):
 
-![Doxygen](img/doxygen.png)
+![Doxygen](img/doxygen.pngs)
 
 4. Modificar los archivos de la práctica:
     * [program.cc](program.cc)
