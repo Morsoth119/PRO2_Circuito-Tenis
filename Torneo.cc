@@ -35,7 +35,8 @@ void Torneo::procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl) {
     escribir_cuadro_final(resultados, it);
     cout << endl;
     for (int i = 0; i < participantes.size(); ++i)
-        cout << i + 1 << "." << participantes[i].nombre << " " << participantes[i].pts << endl;
+        if (participantes[i].pts != 0)
+            cout << i + 1 << "." << participantes[i].nombre << " " << participantes[i].pts << endl;
     anadir_puntos(j);
     restar_puntos(j);
     borrar_participantes();
