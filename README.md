@@ -98,13 +98,27 @@ make clean
 
 * En el caso de necesitar comparar nuestra salida con otro archivo, tendremos que sustituir el contenido del archivo [sample_out.txt](tests/sample_out.txt) con el deseado.
 
-* 
+* En el caso del archivo [run](run), no recomiendo modificarlo.
 
-![Run](img/run.pngs)
+![Run](img/run.png)
 
 3. Modificar el archivo [dg](dg) y el [Doxyfile](Doxtfile):
 
-![Doxygen](img/doxygen.pngs)
+    * Doxygen es una herramienta web para visualizar de forma clara la estructura de un programa modular.
+
+* En el caso de querer modificar el archivo [Doxyfile](Doxtfile), dentro de este se encuentra una breve explicación de lo que hace cada opción, por lo que sólo has de ir leyendo y modificando a tu gusto.
+* También existe la opción de crear un archivo Doxyfile totalmente nuevo. Para ello primero deberemos eliminar el ya existente:
+```sh
+sudo rm Doxyfile
+```
+* Y a continuación escribir:
+```sh
+doxygen -g
+```
+
+* En el caso del archivo [dg](dg), sólo recomiendo modificar el navegador con el que se abre la decumentación creada. En mi caso utilizo Firefox.
+
+![Doxygen](img/dg.png)
 
 4. Modificar los archivos de la práctica:
     * [program.cc](program.cc)
