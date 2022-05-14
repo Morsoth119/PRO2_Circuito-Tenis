@@ -35,7 +35,7 @@ int main() {
 
     string com;
     while (cin >> com and com != "fin") {
-        cout << "#" << com;
+        cout << '#' << com;
 
         if (com == "nuevo_jugador" or com == "nj") nuevo_jugador(jugadores);
         else if (com == "nuevo_torneo" or com == "nt") nuevo_torneo(circuito);
@@ -80,7 +80,7 @@ void setup(Circuito& circuito, Cjn_Jugadores& jugadores) {
 
 void nuevo_jugador(Cjn_Jugadores& j) {
     string p; cin >> p;
-    cout << " " << p << endl;
+    cout << ' ' << p << endl;
     if (j.existe_jugador(p)) cout << "error: ya existe un jugador con ese nombre" << endl;
     else {
         j.anadir_jugador(p, Jugador(p, j.num_jugadores() + 1));
@@ -90,7 +90,7 @@ void nuevo_jugador(Cjn_Jugadores& j) {
 
 void nuevo_torneo(Circuito& c) {
     string t; int cat; cin >> t >> cat;
-    cout << " " << t << " " << cat << endl;
+    cout << ' ' << t << ' ' << cat << endl;
     if (cat <= 0 or cat > c.num_categorias()) cout << "error: la categoria no existe" << endl;
     else if (c.existe_torneo(t)) cout << "error: ya existe un torneo con ese nombre" << endl;
     else {
@@ -101,7 +101,7 @@ void nuevo_torneo(Circuito& c) {
 
 void baja_jugador(Circuito& c, Cjn_Jugadores& j) {
     string p; cin >> p;
-    cout << " " << p << endl;
+    cout << ' ' << p << endl;
     if (not j.existe_jugador(p)) cout << "error: el jugador no existe" << endl;
     else {
         j.eliminar_jugador(p);
@@ -112,7 +112,7 @@ void baja_jugador(Circuito& c, Cjn_Jugadores& j) {
 
 void baja_torneo(Circuito& c, Cjn_Jugadores& j) {
     string t; cin >> t;
-    cout << " " << t << endl;
+    cout << ' ' << t << endl;
     if (not c.existe_torneo(t)) cout << "error: el torneo no existe" << endl;
     else {
         c.eliminar_torneo(t, j);
@@ -123,13 +123,13 @@ void baja_torneo(Circuito& c, Cjn_Jugadores& j) {
 
 void iniciar_torneo(Circuito& c, Cjn_Jugadores& j) {
     string t; cin >> t;
-    cout << " " << t << endl;
+    cout << ' ' << t << endl;
     c.iniciar_torneo(t, j);
 }
 
 void finalizar_torneo(Circuito& c, Cjn_Jugadores& j) {
     string t; cin >> t;
-    cout << " " << t << endl;
+    cout << ' ' << t << endl;
     c.finalizar_torneo(t, j);
     j.actualizar_ranking();
 }
@@ -146,7 +146,7 @@ void listar_jugadores(Cjn_Jugadores& j) {
 
 void consultar_jugador(Cjn_Jugadores& j) {
     string p; cin >> p;
-    cout << " " << p << endl;
+    cout << ' ' << p << endl;
     if (not j.existe_jugador(p)) cout << "error: el jugador no existe" << endl;
     else j.escribir_jugador(p);
 }

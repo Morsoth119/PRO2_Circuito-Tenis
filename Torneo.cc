@@ -34,9 +34,10 @@ void Torneo::procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl) {
     list<string>::iterator it = list_resultados.begin();
     escribir_cuadro_final(resultados, it);
     cout << endl;
+//TODO: no añadir los jugadores q ganan 0 puntos directamente ?
     for (int i = 0; i < participantes.size(); ++i)
         if (participantes[i].pts != 0)
-            cout << i + 1 << "." << participantes[i].nombre << " " << participantes[i].pts << endl;
+            cout << i + 1 << '.' << participantes[i].nombre << ' ' << participantes[i].pts << endl;
     anadir_puntos(j);
     restar_puntos(j);
     borrar_participantes();
@@ -133,7 +134,7 @@ void Torneo::escribir_cuadro_final(const BinTree<int>& c, list<string>::iterator
         cout << c.left().value() << '.' << participantes[c.left().value() - 1].nombre;
         cout << " vs ";
         cout << c.right().value() << '.' << participantes[c.right().value() - 1].nombre;
-        cout << " " << (*it);
+        cout << ' ' << (*it);
         ++it;
         escribir_cuadro_final(c.left(), it);
         escribir_cuadro_final(c.right(), it);

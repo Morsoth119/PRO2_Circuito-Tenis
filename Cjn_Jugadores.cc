@@ -35,7 +35,7 @@ int Cjn_Jugadores::num_jugadores() const { return ranking.size(); }
 
 void Cjn_Jugadores::escribir_ranking() const {
     for (int i = 0; i < ranking.size(); ++i) 
-        cout << i + 1 << " " << ranking[i]->first << " " << ranking[i]->second.consultar_puntos() << endl;
+        cout << i + 1 << ' ' << ranking[i]->first << ' ' << ranking[i]->second.consultar_puntos() << endl;
 }
 
 void Cjn_Jugadores::escribir_jugadores() const {
