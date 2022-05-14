@@ -80,7 +80,7 @@ make clean
     * Este archivo nos automatiza tareas en las que se ven envueltos varios archivos.
 * En caso de necesitar un nuevo archivo para compilar simplemente habrá que añadir estas lineas de código al archivo [Makefile](Makefile) ya existente:
 
-![Compilacion](img/compilacion.png) 
+![Compilacion](img/comp.png) 
 
 * Además habrá que añadir los nuevos archivos al "practica.tar":
 
