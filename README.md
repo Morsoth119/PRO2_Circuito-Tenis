@@ -1,7 +1,9 @@
 <div style="text-align:center">
-![Imagen Titulo]()
+
+![Imagen Titulo](./banner.png)
 
 **Explicación del Proyecto**
+
 [Instalación](#instalacion) • [Ejecución](#ejecucion) • [Doxygen](#doxygen) • [Modificar Proyecto](#modificar) • [Licencia](#licencia)
 </div>
 
