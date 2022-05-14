@@ -1,6 +1,6 @@
 <div style="text-align:center">
 
-![Imagen Titulo](./banner.png)
+![Imagen Titulo](img/banner.png)
 
 **Explicación del Proyecto**
 
