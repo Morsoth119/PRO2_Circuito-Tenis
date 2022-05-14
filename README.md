@@ -26,7 +26,7 @@ git clone https://github.com/Morsoth119/PRO2_Circuito-Tenis.git
 ```sh
 sudo apt install meld
 ```
-2. Ejecutar el archivo **run**:
+2. Ejecutar el archivo [run](run):
 ```sh
 ./run
 ```
@@ -38,7 +38,7 @@ sudo apt install meld
 ```sh
 mkdir DOXYGEN
 ```
-2. Ejecutar el archivo **dg**:
+2. Ejecutar el archivo [dg](dg):
 ```sh
 ./dg
 ```
