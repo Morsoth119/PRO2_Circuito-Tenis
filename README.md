@@ -8,6 +8,10 @@
 * [Crear practica.tar](#practica-tar)
 * [Eliminar ejecutables](#clean)
 * [Modificar proyecto](#modificar)
+    * [Modificar Makefile](#modificar-makefile)
+    * [Modificar entrada y salida](#modificar-io)
+    * [Modificar Doxyfile](#modificar-doxyfile)
+    * [Modificar Doxyfile](#modificar-prac)
 * [Licencia](#licencia)
 
 ![Descargas](https://img.shields.io/github/downloads/Morsoth119/PRO2_Circuito-Tenis/total)
@@ -75,6 +79,8 @@ make clean
 
 ## Modificar proyecto
 
+<a id="modificar-makefile"></a>
+
 1. Modificar el archivo [Makefile](Makefile):
 
     * Este archivo nos automatiza tareas en las que se ven envueltos varios archivos.
@@ -90,6 +96,8 @@ make clean
 
 ![Clean](img/clean.png)
 
+<a id="modificar-io"></a>
+
 2. Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
 
     * Estos archivos se encargan de automatizar la tarea de introducir la entrada y comparar la salida del programa.
@@ -101,6 +109,8 @@ make clean
 * En el caso del archivo [run](run), no recomiendo modificarlo.
 
 ![Run](img/run.png)
+
+<a id="modificar-doxyfile"></a>
 
 3. Modificar el archivo [dg](dg) y el [Doxyfile](Doxtfile):
 
@@ -120,9 +130,12 @@ doxygen -g
 
 ![Doxygen](img/dg.png)
 
+<a id="modificar-prac"></a>
+
 4. Modificar los archivos de la práctica:
 
     * Estos són todos lo archivos que yo he usado para la práctica (todos escritos por mi excepto [BinTree.hh](BinTree.hh)).
+
 * [program.cc](program.cc)
 * [Circuito.hh](Circuito.hh)
 * [Circuito.cc](Circuito.cc)
