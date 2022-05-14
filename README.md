@@ -42,6 +42,10 @@ sudo apt install meld
 
 ## Modificar Proyecto
 
+![Run](img/run.png)
+
+![Run](img/doxygen.png)
+
 <a id="licencia"></a>
 
 ## Licencia
