@@ -34,7 +34,11 @@ sudo apt install meld
 <a id="doxygen"></a>
 
 ## Doxygen
-1. Ejecutar el archivo **dg**:
+1. Crear una carpeta con nombre `DOXYGEN`:
+```sh
+mkdir DOXYGEN
+```
+2. Ejecutar el archivo **dg**:
 ```sh
 ./dg
 ```
