@@ -121,18 +121,19 @@ doxygen -g
 ![Doxygen](img/dg.png)
 
 4. Modificar los archivos de la práctica:
-    * [program.cc](program.cc)
-    * [Circuito.hh](Circuito.hh)
-    * [Circuito.cc](Circuito.cc)
-    * [Torneo.hh](Torneo.hh)
-    * [Torneo.cc](Torneo.cc)
-    * [Categoria.hh](Categoria.hh)
-    * [Categoria.cc](Categoria.cc)
-    * [Cjn_Jugadores.hh](Cjn_Jugadores.hh)
-    * [Cjn_Jugadores.cc](Cjn_Jugadores.cc)
-    * [Jugador.hh](Jugador.hh)
-    * [Jugador.cc](Jugador.cc)
-    * [BinTree.hh](BinTree.hh)
+    * Estos són todos lo archivos que yo he usado para la práctica (todos escritos por mi escepto [BinTree.hh](BinTree.hh)).
+* [program.cc](program.cc)
+* [Circuito.hh](Circuito.hh)
+* [Circuito.cc](Circuito.cc)
+* [Torneo.hh](Torneo.hh)
+* [Torneo.cc](Torneo.cc)
+* [Categoria.hh](Categoria.hh)
+* [Categoria.cc](Categoria.cc)
+* [Cjn_Jugadores.hh](Cjn_Jugadores.hh)
+* [Cjn_Jugadores.cc](Cjn_Jugadores.cc)
+* [Jugador.hh](Jugador.hh)
+* [Jugador.cc](Jugador.cc)
+* [BinTree.hh](BinTree.hh) _(recomiendo no modificarlo)_
 
 <a id="licencia"></a>
 
