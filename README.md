@@ -2,7 +2,6 @@
 
 **Explicación del Proyecto**
 
-###### Índice
 * [Instalación](#instalacion)
 * [Ejecución](#ejecucion)
 * [Doxygen](#doxygen)
