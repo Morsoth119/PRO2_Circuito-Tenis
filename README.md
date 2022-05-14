@@ -77,9 +77,14 @@ make clean
 
 1. Modificar el archivo [Makefile](Makefile):
 
-    * En este archivo encontramos tanto la co
+    * Este archivo nos automatiza tareas en las que se ven envueltos varios archivos.
+* En caso de necesitar un nuevo archivo para compilar simplemente habrá que añadir estas lineas de código al archivo [Makefile](Makefile) ya existente:
 
-![Makefile](img/makefile.png)
+![Compilacion](img/compilacion.png) 
+
+* Además habrá que añadir los nuevos archivos al "practica.tar":
+
+![Practica](img/practica.png)
 
 2. Modificar los archivos [run](run), [inp.txt](tests/inp.txt) y [sample_out.txt](tests/sample_out.txt):
 
