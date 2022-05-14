@@ -77,7 +77,7 @@ make clean
 
 1. Modificar el archivo [Makefile](Makefile):
 
-    * En este archivo encontramos tanto 
+    * En este archivo encontramos tanto la co
 
 ![Makefile](img/makefile.png)
 
