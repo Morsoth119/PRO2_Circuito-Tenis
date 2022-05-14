@@ -22,7 +22,7 @@ git clone https://github.com/Morsoth119/PRO2_Circuito-Tenis.git
 <a id="ejecucion"></a>
 
 ## Ejecución
-1. Instalar _meld_:
+1. Instalar **meld**:
 ```sh
 sudo apt install meld
 ```
