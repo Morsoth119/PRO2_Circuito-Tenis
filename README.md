@@ -20,15 +20,21 @@ clone
 
 ## Ejecución
 1. Instalar _meld_:
-    * `$ sudo apt install meld`
+```sh
+sudo apt install meld
+```
 2. Ejecutar el archivo **run**:
-    * `$ ./run`
+```sh
+./run
+```
 
 <a id="doxygen"></a>
 
 ## Doxygen
 1. Ejecutar el archivo **dg**:
-    * `$ ./dg`
+```sh
+./dg
+```
 
 <a id="modificar"></a>
 
