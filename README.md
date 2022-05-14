@@ -1,12 +1,13 @@
-<div style="text-align:center">
-
 # 🎾 PRO2 - Circuito Tenis 🎾
 
 **Explicación del Proyecto**
 
-[Instalación](#instalacion) • [Ejecución](#ejecucion) • [Doxygen](#doxygen) • [Modificar Proyecto](#modificar) • [Licencia](#licencia)
-
-</div>
+###### Índice
+* [Instalación](#instalacion)
+* [Ejecución](#ejecucion)
+* [Doxygen](#doxygen)
+* [Modificar Proyecto](#modificar)
+* [Licencia](#licencia)
 
 <a id="instalacion"></a>
 
