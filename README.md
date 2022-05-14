@@ -2,6 +2,8 @@
 ![Imagen Titulo]()
 
 **Explicación del Proyecto**
+<br>
+
 [Instalación](#instalacion) • [Ejecución](#ejecucion) • [Doxygen](#doxygen) • [Modificar Proyecto](#modificar) • [Licencia](#licencia)
 </div>
 
