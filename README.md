@@ -8,6 +8,8 @@
 * [Modificar Proyecto](#modificar)
 * [Licencia](#licencia)
 
+![Descargas](https://img.shields.io/github/downloads/Morsoth119/PRO2_Circuito-Tenis/total)
+![Tamaño](https://img.shields.io/github/repo-size/Morsoth119/PRO2_Circuito-Tenis)
 <a id="instalacion"></a>
 
 ## Instalación
