@@ -6,13 +6,15 @@ info=$(tput setaf 3)
 bold=$(tput bold)
 reset=$(tput sgr0)
 
+data="real time: \t%E \nuser time: \t%U \nsystem time: \t%S \npage faults: \tmajor: %F, minor: %R \nmemory (kb): \t%K"
+
 clear
 echo "${bold}${info}compiling modifications...${reset}"
 make
 if [ -f ./program.exe ];
 then
     echo "${bold}${info}executing program...${reset}"
-    ./program.exe < tests/inp.txt > tests/out.txt 
+    time -f "${data}" ./program.exe < tests/inp.txt > tests/out.txt 
     echo "${bold}${noerror}comparing results...${reset}"
     meld tests/out.txt tests/sample_out.txt
 else
