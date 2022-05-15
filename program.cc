@@ -49,7 +49,6 @@ int main() {
         else if (com == "listar_torneos" or com == "lt") listar_torneos(circuito);
         else if (com == "listar_categorias" or com == "lc") listar_categorias(circuito);
     }
-    // destruir el circuito y los jugadores ?
 }
 
 void setup(Circuito& circuito, Cjn_Jugadores& jugadores) {
