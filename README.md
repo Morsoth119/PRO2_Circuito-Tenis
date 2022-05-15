@@ -108,7 +108,7 @@ Estos archivos se encargan de automatizar la tarea de introducir la entrada y co
 
 * En el caso del archivo [run](run), no recomiendo modificarlo.
 
-![Run](img/run_.png)
+![Run](img/run.png)
 
 <a id="modificar-doxyfile"></a>
 
