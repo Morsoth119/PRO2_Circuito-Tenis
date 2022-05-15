@@ -6,6 +6,7 @@ info=$(tput setaf 3)
 bold=$(tput bold)
 reset=$(tput sgr0)
 
+clear
 echo "${bold}${info}compiling modifications...${reset}"
 make
 if [ -f ./program.exe ];
