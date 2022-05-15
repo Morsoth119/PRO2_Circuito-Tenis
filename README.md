@@ -12,7 +12,6 @@
     * [Modificar entrada y salida](#modificar-io)
     * [Modificar Doxyfile](#modificar-doxyfile)
     * [Modificar Práctica](#modificar-prac)
-* [Licencia](#licencia)
 
 ![Descargas](https://img.shields.io/github/downloads/Morsoth119/PRO2_Circuito-Tenis/total)
 ![Tamaño](https://img.shields.io/github/repo-size/Morsoth119/PRO2_Circuito-Tenis)
@@ -148,8 +147,3 @@ Estos són todos lo archivos que yo he usado para la práctica (todos escritos p
 * [Jugador.hh](Jugador.hh)
 * [Jugador.cc](Jugador.cc)
 * [BinTree.hh](BinTree.hh) _(recomiendo no modificarlo)_
-
-<a id="licencia"></a>
-
-## Licencia
-
