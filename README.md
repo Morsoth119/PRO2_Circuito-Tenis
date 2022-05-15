@@ -11,7 +11,7 @@
     * [Modificar Makefile](#modificar-makefile)
     * [Modificar entrada y salida](#modificar-io)
     * [Modificar Doxyfile](#modificar-doxyfile)
-    * [Modificar Doxyfile](#modificar-prac)
+    * [Modificar Práctica](#modificar-prac)
 * [Licencia](#licencia)
 
 ![Descargas](https://img.shields.io/github/downloads/Morsoth119/PRO2_Circuito-Tenis/total)
@@ -126,7 +126,7 @@ sudo rm Doxyfile
 doxygen -g
 ```
 
-* En el caso del archivo [dg](dg), sólo recomiendo modificar el navegador con el que se abre la decumentación creada. En mi caso utilizo Firefox.
+* En el caso del archivo [dg](dg), sólo recomiendo modificar el navegador con el que se abre la documentación creada. En mi caso utilizo Firefox.
 
 ![Doxygen](img/dg.png)
 
