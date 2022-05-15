@@ -1,6 +1,28 @@
 #!/bin/sh
 
-clear
-make
-./program.exe < tests/inp.txt > tests/out.txt
-meld tests/out.txt tests/sample_out.txt
+error=$(tput setaf 1)
+noerror=$(tput setaf 2)
+info=$(tput setaf 3)
+bold=$(tput bold)
+reset=$(tput sgr0)
+
+if [ -f ./program.exe ];
+then
+    echo "${bold}${info}executing program...${reset}"
+    ./program.exe < tests/inp.txt > tests/out.txt 
+    echo "${bold}${noerror}comparing results...${reset}"
+    meld tests/out.txt tests/sample_out.txt
+else
+    echo "${bold}${info}compiling program...${reset}"
+    make
+
+    if [ -f ./program.exe ];
+    then
+        echo "${bold}${info}executing program...${reset}"
+        ./program.exe < tests/inp.txt > tests/out.txt 
+        echo "${bold}${noerror}comparing results...${reset}"
+        meld tests/out.txt tests/sample_out.txt
+    else
+        echo "${bold}${error}program did not compile...${reset}"
+    fi
+fi
