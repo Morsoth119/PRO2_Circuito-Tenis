@@ -11,9 +11,9 @@ make
 if [ -f ./program.exe ];
 then
     echo "${bold}${info}executing program...${reset}"
-    ./program.exe < runfiles/final_inp.txt > runfiles/out.txt 
+    ./program.exe < tests/inp.txt > tests/out.txt 
     echo "${bold}${noerror}comparing results...${reset}"
-    meld runfiles/out.txt runfiles/final_out.txt
+    meld tests/out.txt tests/sample_out.txt
 else
     echo "${bold}${error}program did not compile...${reset}"
 fi
