@@ -23,7 +23,7 @@ void Cjn_Jugadores::modificar_jugador(const string& s, const string& stat, int n
 }
 
 void Cjn_Jugadores::actualizar_ranking() {
-    sort(ranking.begin(), ranking.end(), cmp);
+    stable_sort(ranking.begin(), ranking.end(), cmp);
     for (int i = 0; i < ranking.size(); ++i) ranking[i]->second.modificar_stats("rk", i + 1);
 }
 
@@ -54,7 +54,5 @@ void Cjn_Jugadores::escribir_jugador(const string& s) const {
 // private:
 
 bool Cjn_Jugadores::cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b) { 
-    if (a->second.consultar_puntos() == b->second.consultar_puntos()) 
-        return a->second.consultar_ranking() < b->second.consultar_ranking();
     return a->second.consultar_puntos() > b->second.consultar_puntos();
 }
