@@ -6,9 +6,7 @@ Circuito::Circuito() {}
 
 void Circuito::anadir_categoria(Categoria c) { vec_categorias.push_back(c); }
 
-void Circuito::anadir_torneo(string t, int c) { 
-    torneos.insert(make_pair(t, Torneo(t, c)));
-}
+void Circuito::anadir_torneo(string t, int c) { torneos.insert(make_pair(t, Torneo(t, c))); }
 
 void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
 
