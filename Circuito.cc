@@ -6,9 +6,9 @@ Circuito::Circuito() {}
 
 void Circuito::anadir_categoria(Categoria c) { vec_categorias.push_back(c); }
 
-void Circuito::anadir_torneo(string t, int c) { torneos.insert(make_pair(t, Torneo(t, c))); }
-
 void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
+
+void Circuito::anadir_torneo(string t, int c) { torneos.insert(make_pair(t, Torneo(t, c))); }
 
 void Circuito::eliminar_torneo(const string& t, Cjn_Jugadores& j) {
     map<string, Torneo>::iterator it = torneos.find(t);
@@ -38,13 +38,13 @@ void Circuito::eliminar_jugador_torneos(const string& p) {
     }
 }
 
-Torneo Circuito::torneo(const string& s) const { return torneos.find(s)->second; }
+Torneo Circuito::torneo(const string& t) const { return torneos.find(t)->second; }
 
 int Circuito::num_categorias() const { return vec_categorias.size(); }
 
 int Circuito::num_torneos() const { return torneos.size(); }
 
-bool Circuito::existe_torneo(const string& s) const { return (torneos.find(s) != torneos.end()); }
+bool Circuito::existe_torneo(const string& t) const { return (torneos.find(t) != torneos.end()); }
 
 void Circuito::escribir_categorias() const {
     int n_nvl = vec_categorias[0].num_niveles();

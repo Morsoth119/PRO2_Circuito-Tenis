@@ -2,7 +2,7 @@
 
 // public:
 
-Torneo::Torneo(string t, int c) {
+Torneo::Torneo(const string& t, int c) {
     nombre = t;
     categoria = c;
 }

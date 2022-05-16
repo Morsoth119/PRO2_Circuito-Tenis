@@ -1,5 +1,45 @@
 /** @mainpage
-    sexo duro
+    <h4 style="margin-bottom: 0">Índice de las clases:</h4>
+    <ul style="margin-top: 2px">
+        <li>
+            Circuito
+            <ul>
+                <li>Circuito.hh</li>
+                <li>Circuito.cc</li>
+            </ul>
+        </li>
+        <li>
+            Torneo
+            <ul>
+                <li>Torneo.hh</li>
+                <li>Torneo.cc</li>
+            </ul>
+        </li>
+        <li>
+            Categoria
+            <ul>
+                <li>Categoria.hh</li>
+                <li>Categoria.cc</li>
+            </ul>
+        </li>
+        <li>
+            Cjn_Jugadores
+            <ul>
+                <li>Cjn_Jugadores.hh</li>
+                <li>Cjn_Jugadores.cc</li>
+            </ul>
+        </li>
+        <li>
+            Jugador 
+            <ul>
+                <li>Jugador.hh</li>
+                <li>Jugador.cc</li>
+            </ul>
+        </li>
+    </ul>
+    <div style="witdh: 100%; border-top: solid 1px #c4cfe5"></div>
+    <p><b>Autor:</b> Pau Zaragoza Gallardo</p>
+    <p><b>Grupo:</b> 31</p>
 */
 
 #include "Circuito.hh"
@@ -77,7 +117,7 @@ void setup(Circuito& circuito, Cjn_Jugadores& jugadores) {
     cin >> num_jug;
     for (int i = 0; i < num_jug; ++i) {
         string p; cin >> p;
-        jugadores.anadir_jugador(p, Jugador(p, i + 1));
+        jugadores.anadir_jugador(p, i + 1);
     }
 }
 
@@ -86,7 +126,7 @@ void nuevo_jugador(Cjn_Jugadores& j) {
     cout << ' ' << p << endl;
     if (j.existe_jugador(p)) cout << "error: ya existe un jugador con ese nombre" << endl;
     else {
-        j.anadir_jugador(p, Jugador(p, j.num_jugadores() + 1));
+        j.anadir_jugador(p, j.num_jugadores() + 1);
         cout << j.num_jugadores() << endl;
     }
 }

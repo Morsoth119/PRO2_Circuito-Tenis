@@ -13,7 +13,9 @@ using namespace std;
 
 class Categoria 
 {
+    /** Nombre de la Categoria */
     string nombre;
+    /** Vector con los puntos que gana cada Jugador dependiendo del nivel al que llega en un Torneo */
     vector<int> pts_nivel;
 
 public:
@@ -31,7 +33,7 @@ public:
 
     /**
         @brief Añade los puntos de cada nivel de la Categoria.
-        @pre <b style="color: #ff8033">v</b> no esta vacio
+        @pre <b style="color: #ff8033">v</b> no esta vacío
         @post sustituye el vector de pts_nivel por <b style="color: #ff8033">v</b>
     */
     void anadir_pts_nivel(const vector<int>& v);
@@ -53,7 +55,7 @@ public:
     int consultar_pts_nivel(int i) const;
 
     /**
-        @brief Devuelve el numero de niveles que tiene la Categoria.
+        @brief Devuelve el número de niveles que tiene la Categoria.
         @pre <em>cierto</em>
         @post devuelve el tamaño de pts_nivel
     */

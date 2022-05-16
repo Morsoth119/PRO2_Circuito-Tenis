@@ -12,9 +12,26 @@ using namespace std;
 
 class Jugador 
 {
+    /** @brief Nombre del Jugador */
     string nombre;
+    /** @brief Puntos que tiene el Jugador */
     int puntos;
-    int Rk, Ts, WM, LM, WS, LS, WG, LG;
+    /** @brief Ranking del Jugador */
+    int Rk;
+    /** @brief Torneos jugados del Jugador */
+    int Ts;
+    /** @brief Partidos ganados del Jugador */
+    int WM;
+    /** @brief Partidos perdidos del Jugador */
+    int LM;
+    /** @brief Sets ganados del Jugador */
+    int WS;
+    /** @brief Sets perdidos del Jugador */
+    int LS;
+    /** @brief Juegos ganados del Jugador */
+    int WG;
+    /** @brief Juegos perdidos del Jugador */
+    int LG;
 
 public:
 
@@ -23,16 +40,16 @@ public:
     /**
         @brief Constructora por defecto.
         @pre <em>cierto</em>
-        @post el resultado es un Jugador con nombre 'p' i 0 en todas sus estadisticas
+        @post el resultado es un Jugador con nombre <b style="color: #ff8033">p</b>, Rk = <b style="color: #ff8033">rank</b> y 0 en todas sus estadísticas
     */
     Jugador(const string& p, int rank);
 
 //MODIFICADORES
 
     /**
-        @brief Se le suman (o restan) los puntos al Jugador.
-        @pre puntos - 'pts' >= 0
-        @post puntos += 'pts' ('pts' puede ser negativo)
+        @brief Modifica una estadística del Jugador.
+        @pre <em>cierto</em>
+        @post suma / modifica la variable con identificador el <b style="color: #ff8033">stat</b> la cantidad <b style="color: #ff8033">n</b>
     */
     void modificar_stats(const string& stat, int n);
 
@@ -51,15 +68,20 @@ public:
         @post devuelve la variable puntos
     */
     int consultar_puntos() const; 
-
+    
+    /**
+        @brief Devuelve la posición del ranking que ocupa el Jugador.
+        @pre <em>cierto</em>
+        @post devuelve la variable Rk
+    */
     int consultar_ranking() const;
 
 //IMPRIMIR
 
     /**
-        @brief Escribe las estadisticas del Jugador.
+        @brief Escribe las estadísticas del Jugador.
         @pre <em>cierto</em>
-        @post escribe el nombre, el ranking, los puntos y las demas estadisticas por consola
+        @post escribe el nombre, el ranking, los puntos y las demás estadísticas por consola
     */
     void escribir_jug() const;
 
