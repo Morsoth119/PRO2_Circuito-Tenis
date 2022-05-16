@@ -57,21 +57,21 @@ public:
     /**
         @brief Elimina un Torneo del Circuito.
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
-        @post elimina el Torneo con nombre <b style="color: #ff8033">t</b> de la lista de torneos y resta los puntos de la ultima edicion de tal Torneo a todos los jugadores que participaron
+        @post elimina el Torneo con nombre <b style="color: #ff8033">t</b> de la lista de torneos y resta los puntos de la ultima edicion de tal Torneo a todos los jugadores del conjunto de jugadores (Cjn_Jugadores) <b style="color: #ff8033">j</b> que participaron
     */
     void eliminar_torneo(const string& t, Cjn_Jugadores& j);
 
     /**
         @brief Inicia un Torneo.
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b>
-        @post añade los participantes al torneo y crea los emparejamientos
+        @post añade los participantes por posicion en el conjunto de jugadores (Cjn_Jugadores) <b style="color: #ff8033">j</b> al torneo <b style="color: #ff8033">t</b> y crea los emparejamientos
     */
     void iniciar_torneo(const string& t, const Cjn_Jugadores& j);
 
     /**
         @brief Finaliza un Torneo.
         @pre existe el Torneo con nombre <b style="color: #ff8033">t</b> y el Torneo <b style="color: #ff8033">t</b> ha sido iniciado previamente
-        @post lee y procesa los resultados del Torneo <b style="color: #ff8033">t</b> y suma o resta los puntos correspondientes a cada Jugador
+        @post lee y procesa los resultados del Torneo <b style="color: #ff8033">t</b> y suma o resta los puntos correspondientes a cada Jugador del conjunto de jugadores (Cjn_Jugadores) <b style="color: #ff8033">j</b>
     */
     void finalizar_torneo(const string& t, Cjn_Jugadores& j);
 
