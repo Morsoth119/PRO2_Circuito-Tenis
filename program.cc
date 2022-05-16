@@ -1,6 +1,6 @@
 /** @mainpage
-    <h4 style="margin-bottom: 0">Índice de las clases:</h4>
-    <ul style="margin-top: 2px">
+    <h3 style="margin-bottom: 0">Índice de las clases:</h3>
+    <ul style="margin-top: 5px">
         <li>
             Circuito
             <ul>
