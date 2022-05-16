@@ -38,7 +38,6 @@ void Torneo::procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl) {
     list<string>::iterator it = list_resultados.begin();
     escribir_cuadro_final(resultados, it);
     cout << endl;
-//TODO: no añadir los jugadores q ganan 0 puntos directamente ?
     for (int i = 0; i < participantes.size(); ++i)
         if (participantes[i].pts != 0)
             cout << i + 1 << '.' << participantes[i].nombre << ' ' << participantes[i].pts << endl;
