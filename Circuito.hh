@@ -9,6 +9,7 @@
 #include <iostream>
 #include <vector>
 #include <list>
+#include <map>
 using namespace std;
 #endif
 
@@ -18,7 +19,8 @@ using namespace std;
 class Circuito 
 {
     vector<Categoria> vec_categorias;
-    list<Torneo> list_torneos;
+    //list<Torneo> list_torneos;
+    map<string, Torneo> torenos;
 
 public:
 

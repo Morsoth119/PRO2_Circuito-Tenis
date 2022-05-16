@@ -1,3 +1,7 @@
+/** @mainpage
+    sexo duro
+*/
+
 #include "Circuito.hh"
 #include "Cjn_Jugadores.hh"
 
