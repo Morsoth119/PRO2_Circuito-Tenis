@@ -6,59 +6,47 @@ Circuito::Circuito() {}
 
 void Circuito::anadir_categoria(Categoria c) { vec_categorias.push_back(c); }
 
-void Circuito::anadir_torneo(Torneo t) { 
-    list_torneos.push_back(t);
-    list_torneos.sort(cmp);
+void Circuito::anadir_torneo(string t, int c) { 
+    torneos.insert(make_pair(t, Torneo(t, c)));
 }
 
 void Circuito::anadir_niveles(int i, const vector<int>& v) { vec_categorias[i - 1].anadir_pts_nivel(v); }
 
 void Circuito::eliminar_torneo(const string& t, Cjn_Jugadores& j) {
-    list<Torneo>::iterator it = list_torneos.begin();
-    while ((*it).consultar_nombre() != t) ++it;
-    (*it).restar_puntos(j);
-    list_torneos.erase(it);
+    map<string, Torneo>::iterator it = torneos.find(t);
+    it->second.restar_puntos(j);
+    torneos.erase(it);
 }
 
 void Circuito::iniciar_torneo(const string& t, const Cjn_Jugadores& j) {
-    list<Torneo>::iterator it = list_torneos.begin();
-    while ((*it).consultar_nombre() != t) ++it;
-    (*it).anadir_participantes(j);
-    (*it).crear_emparejamientos();
+    map<string, Torneo>::iterator it = torneos.find(t);
+    it->second.anadir_participantes(j);
+    it->second.crear_emparejamientos();
 }
 
 void Circuito::finalizar_torneo(const string& t, Cjn_Jugadores& j) {
-    list<Torneo>::iterator it = list_torneos.begin();
-    while ((*it).consultar_nombre() != t) ++it;
+    map<string, Torneo>::iterator it = torneos.find(t);
     vector<int> pts_nvl(vec_categorias[0].num_niveles());
     for (int i = 0; i < vec_categorias[0].num_niveles(); ++i)
-        pts_nvl[i] = vec_categorias[(*it).consultar_categoria() - 1].consultar_pts_nivel(i);    
-    (*it).procesar_torneo(j, pts_nvl);
+        pts_nvl[i] = vec_categorias[it->second.consultar_categoria() - 1].consultar_pts_nivel(i);    
+    it->second.procesar_torneo(j, pts_nvl);
 }
 
 void Circuito::eliminar_jugador_torneos(const string& p) {
-    list<Torneo>::iterator it = list_torneos.begin();
-    while (it != list_torneos.end()) {
-        (*it).borrar_jugador(p);
+    map<string, Torneo>::iterator it = torneos.begin();
+    while (it != torneos.end()) {
+        it->second.borrar_jugador(p);
         ++it;
     }
 }
 
-Torneo Circuito::torneo(const string& s) const {
-    list<Torneo>::const_iterator it = list_torneos.begin();
-    while ((*it).consultar_nombre() != s) ++it;
-    return (*it);
-}
+Torneo Circuito::torneo(const string& s) const { return torneos.find(s)->second; }
 
 int Circuito::num_categorias() const { return vec_categorias.size(); }
 
-int Circuito::num_torneos() const { return list_torneos.size(); }
+int Circuito::num_torneos() const { return torneos.size(); }
 
-bool Circuito::existe_torneo(const string& s) const {
-    list<Torneo>::const_iterator it = list_torneos.begin();
-    while (it != list_torneos.end() and (*it).consultar_nombre() != s) ++it;
-    return (it != list_torneos.end());
-}
+bool Circuito::existe_torneo(const string& s) const { return (torneos.find(s) != torneos.end()); }
 
 void Circuito::escribir_categorias() const {
     int n_nvl = vec_categorias[0].num_niveles();
@@ -71,14 +59,12 @@ void Circuito::escribir_categorias() const {
 }
 
 void Circuito::escribir_torneos() const {
-    list<Torneo>::const_iterator it = list_torneos.begin();
-    cout << list_torneos.size() << endl;
-    while (it != list_torneos.end()) {
-        cout << (*it).consultar_nombre() << ' ' << vec_categorias[(*it).consultar_categoria() - 1].consultar_nombre() << endl;
+    map<string, Torneo>::const_iterator it = torneos.begin();
+    cout << torneos.size() << endl;
+    while (it != torneos.end()) {
+        cout << it->first << ' ' << vec_categorias[it->second.consultar_categoria() - 1].consultar_nombre() << endl;
         ++it;
     }
 }
 
 // private:
-
-bool Circuito::cmp(const Torneo& a, const Torneo& b) { return (a.consultar_nombre() < b.consultar_nombre()); }

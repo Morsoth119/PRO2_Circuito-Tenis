@@ -8,7 +8,6 @@
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <vector>
-#include <list>
 #include <map>
 using namespace std;
 #endif
@@ -19,8 +18,7 @@ using namespace std;
 class Circuito 
 {
     vector<Categoria> vec_categorias;
-    //list<Torneo> list_torneos;
-    map<string, Torneo> torenos;
+    map<string, Torneo> torneos;
 
 public:
 
@@ -47,7 +45,7 @@ public:
         @pre <em>cierto</em>
         @post añade el Torneo <b style="color: #ff8033">t</b> a la lista de torneos y reordena la lista por orden alfabetico
     */
-    void anadir_torneo(Torneo t);
+    void anadir_torneo(string t, int c);
 
     /**
         @brief Añade los puntos por niveles a una Categoria.
@@ -131,13 +129,6 @@ public:
     void escribir_torneos() const;
 
 private:
-
-    /**
-        @brief Compara dos torneos por orden alfabetico.
-        @pre <em>cierto</em>
-        @post devuelve <b>true</b> si el nombre de <b style="color: #ff8033">a</b> va antes que el de <b style="color: #ff8033">b</b>, de lo contrario devuelve <b>false</b>
-    */
-    static bool cmp(const Torneo& a, const Torneo& b);
 
 };
 

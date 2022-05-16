@@ -72,7 +72,7 @@ void setup(Circuito& circuito, Cjn_Jugadores& jugadores) {
     for (int i = 0; i < num_tor; ++i) {
         string t; cin >> t;
         int c;  cin >> c;
-        circuito.anadir_torneo(Torneo(t, c));
+        circuito.anadir_torneo(t, c);
     }
     cin >> num_jug;
     for (int i = 0; i < num_jug; ++i) {
@@ -97,7 +97,7 @@ void nuevo_torneo(Circuito& c) {
     if (cat <= 0 or cat > c.num_categorias()) cout << "error: la categoria no existe" << endl;
     else if (c.existe_torneo(t)) cout << "error: ya existe un torneo con ese nombre" << endl;
     else {
-        c.anadir_torneo(Torneo(t, cat));
+        c.anadir_torneo(t, cat);
         cout << c.num_torneos() << endl;
     }
 }
