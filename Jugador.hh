@@ -10,6 +10,7 @@
 using namespace std;
 #endif
 
+/** @brief Clase Jugador */
 class Jugador 
 {
     /** @brief Nombre del Jugador */
@@ -90,7 +91,7 @@ public:
     /**
         @brief Destructora por defecto.
         @pre <em>cierto</em>
-        @post se destruye el parametro implícito
+        @post se destruye el parámetro implícito
     */
     ~Jugador();
 

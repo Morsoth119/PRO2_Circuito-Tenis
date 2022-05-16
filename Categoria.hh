@@ -11,6 +11,7 @@
 using namespace std;
 #endif
 
+/** @brief Clase Categoria */
 class Categoria 
 {
     /** Nombre de la Categoria */
@@ -33,7 +34,7 @@ public:
 
     /**
         @brief Añade los puntos de cada nivel de la Categoria.
-        @pre <b style="color: #ff8033">v</b> no esta vacío
+        @pre <b style="color: #ff8033">v</b> no está vacío
         @post sustituye el vector de pts_nivel por <b style="color: #ff8033">v</b>
     */
     void anadir_pts_nivel(const vector<int>& v);

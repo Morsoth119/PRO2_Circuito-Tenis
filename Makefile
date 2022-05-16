@@ -21,10 +21,14 @@ Jugador.o: Jugador.cc Jugador.hh
 program.o: program.cc Circuito.hh Cjn_Jugadores.hh
 	g++ -c program.cc $(OPTIONS)
 
-practica.tar: program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_Jugadores.cc Categoria.hh Categoria.cc Torneo.hh Torneo.cc Jugador.hh Jugador.cc BinTree.hh Makefile
-	tar -cvf practica.tar program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_Jugadores.cc Categoria.hh Categoria.cc Torneo.hh Torneo.cc Jugador.hh Jugador.cc BinTree.hh Makefile
+html.zip: DOXYGEN/html
+	zip -r html.zip DOXYGEN/html
+
+practica.tar: html.zip program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_Jugadores.cc Categoria.hh Categoria.cc Torneo.hh Torneo.cc Jugador.hh Jugador.cc BinTree.hh Makefile
+	tar -cvf practica.tar html.zip program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_Jugadores.cc Categoria.hh Categoria.cc Torneo.hh Torneo.cc Jugador.hh Jugador.cc BinTree.hh Makefile
 
 clean:
 	rm *.o
 	rm *.exe
+	rm html.zip
 	rm practica.tar

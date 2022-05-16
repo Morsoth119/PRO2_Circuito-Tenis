@@ -15,6 +15,7 @@ using namespace std;
 #include "Categoria.hh"
 #include "Torneo.hh"
 
+/** @brief Clase Circuito */
 class Circuito 
 {
     /** @brief Vector donde se almacenan todas las categorías del Circuito por orden de creación */
@@ -72,7 +73,7 @@ public:
 
     /**
         @brief Finaliza un Torneo.
-        @pre existe el Torneo con nombre <b style="color: #ff8033">t</b> y este ha sido iniciado préviamente
+        @pre existe el Torneo con nombre <b style="color: #ff8033">t</b> y este ha sido iniciado previamente
         @post lee y procesa los resultados del Torneo con nombre <b style="color: #ff8033">t</b> y suma o resta los puntos correspondientes a cada Jugador del Cjn_Jugadores (conjunto de jugadores) <b style="color: #ff8033">j</b>
     */
     void finalizar_torneo(const string& t, Cjn_Jugadores& j);
@@ -119,14 +120,14 @@ public:
     /**
         @brief Escribe el vector de categorías por consola.
         @pre <em>cierto</em>
-        @post escribe el vector de categorías por order alfabético en consola
+        @post escribe el vector de categorías por orden alfabético en consola
     */
     void escribir_categorias() const;
 
     /**
         @brief Escribe la lista de torneos por consola.
         @pre <em>cierto</em>
-        @post escribe la lista de torneos por order alfabético en consola
+        @post escribe la lista de torneos por orden alfabético en consola
     */
     void escribir_torneos() const;
 

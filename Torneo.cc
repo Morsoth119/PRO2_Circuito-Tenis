@@ -1,3 +1,7 @@
+/** @file Torneo.cc
+    @brief Implementación de la clase Torneo 
+*/
+
 #include "Torneo.hh"
 
 // public:

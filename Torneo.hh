@@ -17,6 +17,7 @@ using namespace std;
 #include "Categoria.hh"
 #include "BinTree.hh"
 
+/** @brief Clase Torneo */
 class Torneo 
 {
     /** @brief Tupla referente a un Participante de un Torneo */
@@ -72,21 +73,21 @@ public:
     /**
         @brief Lee y procesa los resultados del Torneo.
         @pre existe un Torneo iniciado
-        @post se leen los resultados, se crea el cuadro final con tales resultados, se asignan a cada uno de los participantes del Torneo los puntos correspondientes dependiendo del vector <b style="color: #ff8033">pts_nvl</b> y se suman y restan todas las estadisticas a los jugadores del Cjn_Jugadores (conjunto de jugadores) <b style="color: #ff8033">j</b> 
+        @post se leen los resultados, se crea el cuadro final con tales resultados, se asignan a cada uno de los participantes del Torneo los puntos correspondientes dependiendo del vector <b style="color: #ff8033">pts_nvl</b> y se suman y restan todas las estadísticas a los jugadores del Cjn_Jugadores (conjunto de jugadores) <b style="color: #ff8033">j</b> 
     */
     void procesar_torneo(Cjn_Jugadores& j, const vector<int>& pts_nvl);
 
     /**
         @brief Resta los puntos de los antiguos participantes del Torneo.
         @pre <em>certo</em>
-        @post se restan los puntos que ganó en la anterior edición del Torneo a cada Jugador que participó y que aun existe en el Cjn_Jugadores (conjunto de jugadores) <b style="color: #ff8033">j</b>
+        @post se restan los puntos que ganó en la anterior edición del Torneo a cada Jugador que participó y que aún existe en el Cjn_Jugadores (conjunto de jugadores) <b style="color: #ff8033">j</b>
     */
     void restar_puntos(Cjn_Jugadores& j);
 
     /**
         @brief Borra un Jugador del vector de antiguos participantes del Torneo.
         @pre <em>cierto</em>
-        @post recorre el vector de antiguos participantes y si encuentra un Jugador con nombre <b style="color: #ff8033">p</b>, lo elimina
+        @post recorre el vector de antiguos participantes y si encuentra un Jugador con nombre <b style="color: #ff8033">p</b>, pone sus puntos a 0
     */
     void borrar_jugador(string p);
 
@@ -100,7 +101,7 @@ public:
     string consultar_nombre() const;
 
     /**
-        @brief Devuelve el indice de la Categoria del Torneo.
+        @brief Devuelve el índice de la Categoria del Torneo.
         @pre <em>cierto</em>
         @post devuelve la variable categoria
     */
@@ -111,16 +112,16 @@ public:
     /**
         @brief Destructora por defecto.
         @pre <em>cierto</em>
-        @post se destruye el parametro implícito
+        @post se destruye el parámetro implícito
     */
     ~Torneo();
 
 private:
 
     /**
-        @brief Crea un arbol binario con los partidos.
-        @pre ???
-        @post ???
+        @brief Crea un árbol binario con los partidos.
+        @pre <b style="color: #ff8033">n_part</b> = participantes.size(); <b style="color: #ff8033">h</b> = 1 + ceil(log2(<b style="color: #ff8033">n_part</b>)); <b style="color: #ff8033">conflicto</b> = (pow(2, <b style="color: #ff8033">h</b> - 1) == <b style="color: #ff8033">n_part</b>); <b style="color: #ff8033">pos</b> es la posicián actual del árbol; <b style="color: #ff8033">nivel</b> es el nivel del árbol en el que se trabaja
+        @post devuelve un árbol con un identificador de Jugador y sus hijos correspondientes
     */
     BinTree<int> crear_cuadro(const int& h, const bool& conflicto, const int& n_part, int pos, int nivel);
     
@@ -148,7 +149,7 @@ private:
     /**
         @brief Lee y procesa los resultados de un partido del Torneo.
         @pre <b style="color: #ff8033">WSa</b> = <b style="color: #ff8033">LSa</b> = <b style="color: #ff8033">WGa</b> = <b style="color: #ff8033">LGa</b> = 0
-        @post lee un string con los resultados, suma a cada parametro su valor correspondiente y devuelve <b>true</b> en caso que se juegue el partido o <b>false</b> en caso de que no
+        @post lee un string con los resultados, suma a cada parámetro su valor correspondiente y devuelve <b>true</b> en caso de que se juegue el partido o <b>false</b> en caso de que no
     */
     bool procesar_partido(int& WSa, int& LSa, int& WGa, int& LGa);
 
@@ -162,7 +163,7 @@ private:
     /**
         @brief Elimina los participantes antiguos participantes y los cambia por los participantes de esta edición del Torneo.
         @pre <em>cierto</em>
-        @post el vector de antiguos participantes pasa a ser el vector de participantes actual y se borran, tanto los participantes de esta edición como la lista cn los resultados de los partidos
+        @post el vector de antiguos participantes pasa a ser el vector de participantes actual y se borran, tanto los participantes de esta edición como la lista con los resultados de los partidos
     */
     void borrar_participantes();
 

@@ -42,6 +42,10 @@
     <p><b>Grupo:</b> 31</p>
 */
 
+/** @file program.cc
+    @brief Programa principal 
+*/
+
 #include "Circuito.hh"
 #include "Cjn_Jugadores.hh"
 

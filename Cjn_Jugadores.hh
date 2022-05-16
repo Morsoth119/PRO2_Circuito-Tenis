@@ -15,6 +15,7 @@ using namespace std;
 
 #include "Jugador.hh"
 
+/** @brief Clase Cjn_Jugadores */
 class Cjn_Jugadores 
 {
     /** @brief Vector de iteradores que apuntan a cada Jugador del mapa de jugadores, ordenados por puntos */
@@ -91,14 +92,14 @@ public:
     /**
         @brief Escribe el ranking por consola.
         @pre <em>cierto</em>
-        @post escribe el vector ranking (por order de puntuación) en consola
+        @post escribe el vector ranking (por orden de puntuación) en consola
     */
     void escribir_ranking() const;
 
     /**
         @brief Escribe el mapa de jugadores por orden alfabético en consola.
         @pre <em>cierto</em>
-        @post escribe el mapa de jugadores por order alfabético en consola
+        @post escribe el mapa de jugadores por orden alfabético en consola
     */
     void escribir_jugadores() const;
 
@@ -114,7 +115,7 @@ private:
     /**
         @brief Compara los puntos de dos Jugadores.
         @pre <b style="color: #ff8033">a</b> y <b style="color: #ff8033">b</b> apuntan a un elemento
-        @post devuelve <b>true</b> si el Jugador al que apunta <b style="color: #ff8033">a</b> tiene mas puntos que el que apunta <b style="color: #ff8033">b</b>, devuelve <b>false</b> en caso contrario
+        @post devuelve <b>true</b> si el Jugador al que apunta <b style="color: #ff8033">a</b> tiene más puntos que el que apunta <b style="color: #ff8033">b</b>, devuelve <b>false</b> en caso contrario
     */
     static bool cmp(const map<string, Jugador>::iterator& a, const map<string, Jugador>::iterator& b);
         

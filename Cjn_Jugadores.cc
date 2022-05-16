@@ -1,3 +1,7 @@
+/** @file Cjn_Jugadores.cc
+    @brief Implementación de la clase Cjn_Jugadores 
+*/
+
 #include "Cjn_Jugadores.hh"
 
 // public:

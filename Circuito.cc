@@ -1,3 +1,7 @@
+/** @file Circuito.cc
+    @brief Implementación de la clase Circuito 
+*/
+
 #include "Circuito.hh"
 
 // public:

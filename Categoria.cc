@@ -1,3 +1,7 @@
+/** @file Categoria.cc
+    @brief Implementación de la clase Categoria 
+*/
+
 #include "Categoria.hh"
 
 // public:
