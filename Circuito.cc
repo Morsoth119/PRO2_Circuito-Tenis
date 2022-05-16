@@ -68,5 +68,3 @@ void Circuito::escribir_torneos() const {
         ++it;
     }
 }
-
-// private:
