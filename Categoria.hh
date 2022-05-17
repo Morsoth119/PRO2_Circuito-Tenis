@@ -14,9 +14,9 @@ using namespace std;
 /** @brief Clase Categoria */
 class Categoria 
 {
-    /** Nombre de la Categoria */
+    /** @brief Nombre de la Categoria */
     string nombre;
-    /** Vector con los puntos que gana cada Jugador dependiendo del nivel al que llega en un Torneo */
+    /** @brief Vector con los puntos que gana cada Jugador dependiendo del nivel al que llega en un Torneo */
     vector<int> pts_nivel;
 
 public:
