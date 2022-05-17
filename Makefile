@@ -28,7 +28,7 @@ practica.tar: html.zip program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_J
 	tar -cvf practica.tar html.zip program.cc Circuito.hh Circuito.cc Cjn_Jugadores.hh Cjn_Jugadores.cc Categoria.hh Categoria.cc Torneo.hh Torneo.cc Jugador.hh Jugador.cc BinTree.hh Makefile
 
 clean:
-	rm *.o
-	rm *.exe
-	rm html.zip
+	rm *.o &
+	rm *.exe &
+	rm html.zip &
 	rm practica.tar

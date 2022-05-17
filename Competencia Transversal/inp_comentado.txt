@@ -1,0 +1,321 @@
+5 6
+World_Championship              # Campeonato Mundial (una vez al año)
+Mid_Season_Invitational         # Clasificatorio para el Mundial (una vez al año)
+Grand_Prix_1000                 # Torneo de alto nivel
+Pro_League_600                  # Torneo profesional de nivel medio
+Friendly_Match                  # Torneo Amistoso (se ganan 0 puntos)
+2500 1800 1000 600 250 100
+1500  900  500 300 125  50
+1000  700  400 180  90  30
+ 600  300  120  70  10   0
+   0    0    0   0   0   0
+4
+Piston_Cup 3                    # cat:Grand_Prix_1000
+MSI 2                           # cat:Mid_Season_Invitational
+Worlds_2022 1                   # cat:World_Championship (los puntos ganados en el mundial no se borran cuando empieza el siguiente porque el cada uno tiene el año al lado del nombre ej.: Worlds_2022, Worlds_2022...)
+El_Congo 4                      # cat:Pro_League_600
+30                              # Jugadores iniciales
+Facundo
+Jeremy
+Victor
+Alfredo
+Mike
+Antonio
+Mohamed
+John
+Pau
+Aaron
+Faabio
+Liam
+Dadhichi
+Hiroki
+Emmanuel
+Eustakio
+Willy
+David
+Ramiro
+Ethan
+Emiliano
+Kojiro
+Ahmed
+Zaragoza
+Vlad
+Rodri
+Jack
+Paco
+Goku
+Boris
+listar_categorias               # Lista inicial de categorias
+listar_torneos                  # Lista inicial de torneos
+listar_ranking                  # Ranking inicial
+it El_Congo                     # Inicio del torneo El_Congo
+12
+ 2 3 4 7 10 11 13 16 17 19 21 23
+ft El_Congo                     # Fin del torneo El_Congo
+3-6,7-6,1-6
+4-6,6-7
+0-1
+0
+7-6,6-4
+0 0
+7-6,6-7,6-7
+0
+4-6,2-6
+0 0
+7-6,6-4
+6-5,7-6
+0
+1-0
+0 0
+0-1
+0
+3-6,6-4,6-7
+0 0
+listar_jugadores
+nt Pachanguita 5                # Se añade un torneo amistoso
+it Piston_Cup                   # Inicio del torneo Piston_Cup
+8
+ 2 7 11 12 14 22 27 28
+nj Marcelo                      # Se añaden nuevos jugadores mientras hay un torneo iniciado
+nj Ibra
+nj El_Bicho
+ft Piston_Cup                   # Fin del torneo Piston_Cup
+0-1
+6-2,6-2
+6-2,3-6,6-3
+0 0
+2-6,6-0,6-4
+0 0
+1-6,6-7
+6-3,6-0
+0 0
+1-0
+0 0
+lj                              # Se listan los jugadores
+bj Ahmed                        # Se borran todos los jugadores que jugaron el torneo Piston_Cup
+bj Mohamed
+bj Willy
+bj Ramiro
+bj Mike
+bj Ethan
+bj Jack
+bj Paco
+nj Ahmed                        # Se vuelven a añadir los mismos jugadores, solo que deberan tener 0 puntos
+nj Mohamed
+nj Willy
+nj Ramiro
+nj Mike
+nj Ethan
+nj Jack
+nj Paco
+lj                              # Se vuelven a listar los jugadores para comprobar que se cumple lo anterior
+it Pachanguita                  # Inicio del torneo Pachanguita
+8
+ 1 3 7 8 10 12 16 25
+lr                              # Se lista el ranking
+ft Pachanguita                  # Fin del torneo Pachanguita
+0-1
+6-3,6-1
+0-6,6-4,2-6
+0 0
+6-0,3-6,7-6
+0 0
+7-6,6-7,4-6
+6-4,2-6,6-0
+0 0
+5-6,6-7
+0 0
+lr                              # Se vuelve a listar el ranking para comprobar que nadie gana puntos con la Pachanguita
+it MSI                          # Inicio del torneo MSI
+32
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
+ft MSI                          # Fin del torneo MSI
+6-0,3-6,2-6
+0-6,6-1,7-6
+6-0,6-1
+6-4,7-6
+3-6,7-6,6-2
+0 0
+0-6,6-1,0-6
+0 0
+2-6,6-7
+0-6,7-6,2-6
+0 0
+6-7,7-6,7-6
+0 0
+6-7,3-6
+6-2,6-7,0-6
+6-7,6-1,5-6
+0 0
+7-6,7-6
+0 0
+0-1
+6-1,6-7,5-6
+0 0
+6-0,0-6,6-1
+0 0
+2-6,6-0,4-6
+6-5,0-6,6-7
+5-6,0-6
+1-0
+0 0
+5-6,4-6,6-3
+0 0
+1-0
+1-0
+0 0
+3-6,6-1,6-4
+0 0
+6-1,4-6,1-6
+6-5,0-6,1-6
+1-0
+0 0
+0-1
+0 0
+6-4,6-7,7-6
+6-0,6-5
+0 0
+0-1
+0 0
+lj
+it Worlds_2022                  # Inicio del torneo Worlds_2022 (se clasifican los 16 mejores jugadores del MSI anterior)
+16
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+it Piston_Cup                   # Inicio del torneo Piston_Cup (segunda edicion) (dso torneos iniciados simultaneamente)
+9
+ 18 19 20 21 22 23 24 25 33
+bt Pachanguita                  # Se da de baja el torneo Pachanguita
+ft Piston_Cup                   # Fin del torneo Piston_Cup (se han de eliminar los puntos de la edición anterior)
+1-0
+1-0
+2-6,6-2,6-7
+0
+6-1,1-6,6-1
+0 0
+6-7,6-2,7-6
+0 0
+7-6,6-7,6-2
+1-0
+0 0
+6-3,3-6,3-6
+0 0
+lr
+ft Worlds_2022                  # Fin del torneo Worlds_2022 (los puntos ganados no se restaran)
+6-2,6-7,6-0
+7-6,6-7,4-6
+0-1
+1-0
+0 0
+3-6,1-6
+0 0
+1-6,7-6,1-6
+1-0
+0 0
+6-7,6-4,0-6
+0 0
+6-7,6-7
+6-7,4-6
+6-7,1-6
+0 0
+7-6,6-2
+0 0
+6-1,7-6
+6-4,1-6,3-6
+0 0
+0-1
+0 0
+lr
+nt Worlds_2023 1                # Se crea un nuevo torneo Worlds_2023
+lt
+bt El_Congo                     # Se da de baja el torneo El_Congo (se han de restar los puntos ganados)
+nj Jordan
+nj West
+nj East
+it MSI                          # Inicio del torneo MSI
+32
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
+ft MSI                          # Fin del torneo MSI
+0-1
+7-6,6-0
+6-2,6-3
+3-6,4-6
+7-6,5-6,6-0
+0 0
+0-6,3-6
+0 0
+6-2,2-6,6-7
+6-7,3-6
+0 0
+6-1,3-6,6-0
+0 0
+1-0
+6-0,1-6,3-6
+6-2,7-6
+0 0
+1-6,6-1,6-7
+0 0
+6-7,6-7
+6-7,2-6
+0 0
+1-6,1-6,7-6
+0 0
+0-1
+6-2,6-7,3-6
+1-0
+7-6,6-7,1-6
+0 0
+7-6,6-0
+0 0
+6-2,1-6,5-6
+6-3,7-6
+0 0
+0-1
+0 0
+6-1,7-6
+1-6,0-6,6-3
+6-5,6-7,3-6
+0 0
+1-0
+0 0
+1-6,7-6,6-7
+1-6,0-6
+0 0
+7-6,6-7,7-6
+0 0
+it Worlds_2023                      # Inicio del torneo Worlds_2023 (los puntos ganados en esta edicion seran independientes a los del torneo Worlds_2022)
+16
+ 1 3 4 5 8 9 10 11 12 15 17 23 26 27 28 29
+ft Worlds_2023                      # Fin del torneo Worlds_2023
+1-0
+5-7,4-3,2-0
+6-7,3-6
+4-5,3-2,7-4
+0 0
+6-4,6-1
+0 0
+6-7,0-2
+2-3,6-1,0-1
+0 0
+3-7,2-7
+0 0
+3-1,3-3,6-4
+6-4,3-5,4-5
+0-1
+0 0
+4-1,3-5,4-0
+0 0
+3-0,4-4,3-6
+4-6,2-7
+0 0
+3-6,6-7
+0 0
+nt Worlds_2024 1                    # Se crea un nuevo torneo Worlds_2024
+lr
+bj Vlad
+bj Ibra
+bj Boris
+bj Jack
+bt El_Congo                         # Se da de baja el torneo El_Congo (error: no existe tal torneo)
+lj
+lr
+fin
